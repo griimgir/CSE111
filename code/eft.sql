@@ -1,3 +1,4 @@
+--update check
 create table Classes(
     c_class varchar(32) PRIMARY KEY,
     c_total integer,
