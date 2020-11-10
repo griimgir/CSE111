@@ -1,14 +1,17 @@
+drop table if exists Classes;
 create table Classes(
     c_class varchar(32) PRIMARY KEY,
     c_total integer,
     c_num integer
 );
 
+drop table if exists Ammunition;
 create table Ammunition(
     a_caliber varchar(32),
     a_ammunition varchar(32)
 );
 
+drop table if exists Weapons;
 create table Weapons(
     w_class integer,
     w_name varchar(32),
@@ -17,6 +20,7 @@ create table Weapons(
     w_caliber integer
 );
 
+drop table if exists Armor;
 create table Armor(
     arm_name varchar(32),
     arm_class integer,
@@ -28,6 +32,7 @@ create table Armor(
     arm_ergo integer
 );
 
+drop table if exists Backpack;
 create table Backpack(
     b_class integer,
     b_name varchar(32),
@@ -38,6 +43,7 @@ create table Backpack(
     b_weight integer
 );
 
+drop table if exists GearMods;
 create table GearMods(
     g_class integer,
     g_name varchar(32),
@@ -45,6 +51,7 @@ create table GearMods(
     g_ergo integer
 );
 
+drop table if exists VitalParts;
 create table VitalParts(
     v_class integer,
     v_name varchar(32),
@@ -54,6 +61,7 @@ create table VitalParts(
     v_muzzleVelocity integer
 );
 
+drop table if exists Sights;
 create table Sights(
     s_class integer,
     s_name varchar(32),
@@ -64,6 +72,7 @@ create table Sights(
     s_magnification varchar(32)
 );
 
+drop table if exists Magazine;
 create table Magazine(
     m_class integer,
     m_name varchar(32),
@@ -1290,19 +1299,18 @@ union
 select distinct s_name as Attachments, s_class as Class
 from Sights
 where s_name LIKE '%AS VAL%'
+group by Attachments
+union 
+select distinct m_name as Attachments, m_class as Class
+from Magazine, Weapons
+where w_caliber = m_caliber AND
+        w_name = 'AS VAL'
 group by Attachments;
--- union 
--- select distinct m_name as Attachments, m_class as Class
--- from Magazine, Weapons
--- where w_caliber = m_caliber AND
---         w_name = 'AS VAL'
--- group by Attachments;
--- This doesnt work beacuse naming doesn't match (TODO: FIX Naming for each table)
 
 -- Q12: Print all magazines compatible with 12x70 mm caliber
 select m_name as Magazines
 from Magazine
-where m_caliber LIKE '%12x70 mm%'; --This will need to change after format issues are fixed
+where m_caliber LIKE '%12x70 mm%'; 
 
 -- Q13: Print all magazines compatible with 5.45x39 mm that can hold more than 30 bullets
 select m_name as Magazines, m_capacity as Capacity
@@ -1337,8 +1345,26 @@ select arm_name as Armor, arm_penType as PenType, arm_zones as Protects, min(arm
         arm_movement_speed as MoveSpeed, arm_turn_speed as TurnSpeed, arm_ergo as Ergonomics
 from Armor;
 
--- Q18: 
+-- Q18: Print all sights with no magnification. Select the sight, recoil, ergonomics, and accuracy
+select s_name as Sight, s_recoil as Recoil, s_ergo as Ergonomics, s_accuracy as Accuracy
+from Sights 
+where s_magnification = 0;
 
+-- Q19: Print the average sighting range of sights with magnification vs sights without magnification
+select avg(s1.s_sightingRange) as Magnified, avg(s2.s_sightingRange) as nonMagnified
+from Sights s1, Sights s2 
+where s1.s_magnification <> 0 AND
+        s2.s_magnification = 0;
+
+-- Q20: Print all vital parts who have a muzzle velocity that is non-zero and greater than the average of all non-zero muzzle velocities
+--       order by muzzle velocity in descending order
+select *
+from VitalParts v1
+where v1.v_muzzleVelocity <> 0 AND
+        v1.v_muzzleVelocity > (select avg(v2.v_muzzleVelocity)
+                            from VitalParts v2
+                            where v2.v_muzzleVelocity <> 0)
+order by v1.v_muzzleVelocity desc;
 
 
 
