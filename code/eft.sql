@@ -6,15 +6,15 @@ create table Classes(
 
 create table Ammunition(
     a_caliber varchar(32),
-    a_ammuntion varchar(32)
+    a_ammunition varchar(32)
 );
 
 create table Weapons(
     w_class integer,
-    weapon_name varchar(32),
-    firing_mode varchar(32),
-    fire_rate varchar(32),
-    caliber integer
+    w_name varchar(32),
+    w_firingMode varchar(32),
+    w_fireRate varchar(32),
+    w_caliber integer
 );
 
 create table Armor(
@@ -65,8 +65,8 @@ create table Sights(
 );
 
 create table Magazine(
+    m_class integer,
     m_name varchar(32),
-    m_recoil integer,
     m_ergo integer,
     m_checkSpeed integer,
     m_loadSpeed integer,
@@ -102,7 +102,7 @@ insert into Classes(c_class, c_total, c_num)
         ('Iron sights', 73, 25),
         ('Magazines', 134, 26);
 
-insert into Ammunition(a_caliber, a_ammuntion)
+insert into Ammunition(a_caliber, a_ammunition)
     values ('12x70 mm' , '5.25mm Buckshot'),
         ('12x70 mm' , '8.5mm Buckshot "Magnum"'),
         ('12x70 mm' , '6.5mm Buckshot "Express"'),
@@ -231,7 +231,7 @@ insert into Ammunition(a_caliber, a_ammuntion)
         ('12.7x55 mm', 'ps12'),
         ('12.7x55 mm', 'ps12b');
 
-insert into Weapons(w_class, weapon_name, firing_mode, fire_rate, caliber)
+insert into Weapons(w_class, w_name, w_firingMode, w_fireRate, w_caliber)
     values (1, 'ADAR 2-15', 'Single', 800, '5.56x45 mm'),
     (1, 'AK-101', 'Single | Full‑Auto', 650, '5.56x45 mm'),
     (1, 'AK-102', 'Single | Full‑Auto', 600, '5.56x45 mm'),
@@ -326,19 +326,19 @@ insert into Armor(arm_name, arm_class, arm_penType, arm_zones, arm_durability, a
     ('BNTI Kirasa-N armor', 10, 3, 'Thorax and Stomach', 70, '-8%', '-5%',-6),
     ('Highcom Trooper TFO armor (multicam)', 10, 4, 'Thorax', 85, '-9%', '-2%',-3),
     ('6B13 assault armor', 10, 4, 'Thorax and Stomach', 47, '-12%', '-3%',-5),
-    ('6B23-2 armor (mountain flora pattern)', 10, 4, 'Thorax and Stomach', '55', '-11%', '-3%', -9),
-    ('BNTI Korund-VM armor', 10, 5, 'Thorax and Stomach', '45', '-18%', '-9%', -10),
-    ('FORT Redut-M body armor', 10, 5, 'Thorax and Stomach', '60', '-13%', '-12%', -11),
-    ('6B13 M assault armor (tan)', 10, 5, 'Thorax and Stomach', '60', '-9%', '-3%', -5),
-    ('IOTV Gen4 armor (high mobility kit)', 10, 5, 'Thorax and Stomach', '65', '-11%', '-17%', -12),
-    ('BNTI Gzhel-K armor', 10, 5, 'Thorax and Stomach', '65', '-10%', '-3%', -4),
-    ('FORT Defender-2 body armor', 10, 5, 'Thorax and Stomach', '70', '-9%', '12%', 7),
-    ('IOTV Gen4 armor (assault kit)', 10, 5, 'Thorax, arms and stomach', '75', '-20%', '-14%', -14),
-    ('IOTV Gen4 armor (full protection)', 10, 5, 'Thorax, arms and stomach', '95', '-33%', '-19%', -22),
-    ('FORT Redut-T5 body armor', 10, 5, 'Thorax, arms and stomach', '100', '-37%', '-15%', -14),
-    ('LBT 6094A Slick Plate Carrier', 10, 6, 'Thorax', '80', '-10%', '-2%', -1),
-    ('Zhuk-6a heavy armor', 10, 6, 'Thorax and Stomach', '75', '-13%', '-5%', -6),
-    ('6B43 Zabralo-Sh 6A Armor', 10, 6, 'Thorax, arms and stomach', '85', '-42%', '-21%', 27);
+    ('6B23-2 armor (mountain flora pattern)', 10, 4, 'Thorax and Stomach', 55, '-11%', '-3%', -9),
+    ('BNTI Korund-VM armor', 10, 5, 'Thorax and Stomach', 45, '-18%', '-9%', -10),
+    ('FORT Redut-M body armor', 10, 5, 'Thorax and Stomach', 60, '-13%', '-12%', -11),
+    ('6B13 M assault armor (tan)', 10, 5, 'Thorax and Stomach', 60, '-9%', '-3%', -5),
+    ('IOTV Gen4 armor (high mobility kit)', 10, 5, 'Thorax and Stomach', 65, '-11%', '-17%', -12),
+    ('BNTI Gzhel-K armor', 10, 5, 'Thorax and Stomach', 65, '-10%', '-3%', -4),
+    ('FORT Defender-2 body armor', 10, 5, 'Thorax and Stomach', 70, '-9%', '12%', 7),
+    ('IOTV Gen4 armor (assault kit)', 10, 5, 'Thorax, arms and stomach', 75, '-20%', '-14%', -14),
+    ('IOTV Gen4 armor (full protection)', 10, 5, 'Thorax, arms and stomach', 95, '-33%', '-19%', -22),
+    ('FORT Redut-T5 body armor', 10, 5, 'Thorax, arms and stomach', 100, '-37%', '-15%', -14),
+    ('LBT 6094A Slick Plate Carrier', 10, 6, 'Thorax', 80, '-10%', '-2%', -1),
+    ('Zhuk-6a heavy armor', 10, 6, 'Thorax and Stomach', 75, '-13%', '-5%', -6),
+    ('6B43 Zabralo-Sh 6A Armor', 10, 6, 'Thorax, arms and stomach', 85, '-42%', '-21%', 27);
 
 insert into Backpack(b_class, b_name, b_innerGrid, b_outerGrid, b_totalSlots, b_storageEfficiency, b_weight)
     values (11, '6SH118 raid backpack', '6x8', '6x7', 48, 1.14, 3.3),
@@ -1087,191 +1087,305 @@ insert into Sights(s_class, s_name, s_recoil, s_ergo, s_accuracy, s_sightingRang
     (25, 'Novak Lomount Rear Sight                                   ', 0  , 0  ,0 ,200 ,'0'),        
     (25, 'Novak Lomount Front Sight                                  ', 0  , 0  ,0 ,200 ,'0');        
 
-insert into Magazine(m_name, m_recoil, m_ergo, m_checkSpeed, m_loadSpeed, m_capacity, m_caliber)
-    values (26, '2-shot MC 20-01 Sb.3 20ga magazine for TOZ-106                                    '    ,   0   ,  0   , -20 , 2  ,'20 Gauge  '),
-    (26, '3-shell KS-23M 23mm magazine cap                                                  '    , -1   ,  0   ,  0   , 3  ,'23x75 mm  '),
-    (26, '4-shell M870 12ga magazine cap                                                    '    , -1   ,  0   , 0    , 4  ,'20 Gauge  '),
-    (26, '4-shot MC 20-01 Sb.3 20ga magazine for TOZ-106                                    '    ,   0   ,  0   , -20 , 4  ,'12x70 mm  '),
-    (26, 'Metal magazine for VPO-215 and compatibles, .366 TKM 4-round capacity             '    , 1    , -15 ,   0  , 4  ,'.366      '),
-    (26, 'MP-153 forend cap                                                                 '    ,   0   ,   0  ,   0  , 4  ,'12x70 mm  '),
-    (26, '5-round .308 AICS M700 magazine                                                   '    ,  0    ,   0  , -15 , 5  ,'7.62x51 mm'),
-    (26, '5-round .308 M700 magazine                                                        '    ,   0   ,   0  , -5  , 5  ,'7.62x51 mm'),
-    (26, '5-round .308 T-5000 magazine                                                      '    ,   0   ,   0  , -5  , 5  ,'7.62x51 mm'),
-    (26, '5-shot MC 20-01 Sb.3 20ga magazine for TOZ-106                                    '    , -1   ,   0  , -10 , 5  ,'20 Gauge  '),
-    (26, '7.62x51 metal magazine for VPO-101 and compatibles, 5-round capacity              '    , 1    , -30 , -10 , 5  ,'7.62x51 mm'),
-    (26, 'Magpul PMAG .308 AC 5-round M700 magazine                                         '    ,   0   , -30 ,   0  , 5  ,'7.62x51 mm'),
-    (26, 'MP-153 5-rd magazine extension                                                    '    , -1   ,  0   ,  0   , 5  ,'12x70 mm  '),
-    (26, 'Regular 4rnd magazine for Mosin rifle                                             '    , -1   ,   0  , 0    , 5  ,'7.62x54 mm'),
-    (26, 'Sb.5 5-round 12/76 magazine for SOK-12 and compatible weapons                     '    , -2   ,   0  , -15 , 5  ,'20x70 mm  '),
-    (26, '6-shell MP-133x6 12ga magazine                                                    '    , -1   ,  0   ,  0   , 6  ,'12x70 mm  '),
-    (26, 'MP-153 6-rd magazine extension                                                    '    , -2   , 0    ,  0   , 6  ,'12x70 mm  '),
-    (26, '7-shell M870x7 12ga magazine                                                      '    , -2   ,  0   ,  0   , 7  ,'12x70 mm  '),
-    (26, 'M1911 .45 ACP 7-round magazine                                                    '    ,    0  , -20 , -25 , 7  ,'.45 mm    '),
-    (26, 'M45A1 .45 ACP 7-round magazine                                                    '    ,    0  , -20 , -25 , 7  ,'.45 mm    '),
-    (26, 'MP-153 7-rd magazine extension                                                    '    , -3   , 0    ,  0   , 7  ,'12x70 mm  '),
-    (26, '8-shell M590A1 12ga magazine cap                                                  '    , -2   ,   0  , 0    , 8  ,'12x70 mm  '),
-    (26, '8-shell MP-133x8 12ga magazine                                                    '    , -2   ,  0   ,  0   , 8  ,'12x70 mm  '),
-    (26, '90-93 9x18PM Magazine, for 8 PM rounds                                            '    ,   0   , -20 , -20 , 8  ,'9x18 mm   '),
-    (26, 'MP-153 8-rd magazine extension                                                    '    , -4   ,  0   ,   0  , 8  ,'12x70 mm  '),
-    (26, 'TT-105 7.62x25 TT Magazine                                                        '    ,   0   , -20 , -15 , 8  ,'7.62x25 mm'),
-    (26, '10 rnds. SKS internal box magazine 7.62x39                                        '    ,   0   ,  0   ,  0   , 10 ,'7.62x39 mm'),
-    (26, '10-round .308 AICS M700 magazine                                                  '    , -2   ,   0  , -15 , 10 ,'7.62x51 mm'),
-    (26, '10-round .308 DVL-10 magazine                                                     '    ,    0  ,  0   , -15 , 10 ,'7.62x51 mm'),
-    (26, '10-round .308 M700 magazine                                                       '    , -2   ,  0   , -5  , 10 ,'7.62x51 mm'),
-    (26, '10-round 6L24 9x39 VSS magazine                                                   '    ,   0   ,   0  ,   0  , 10 ,'9x39 mm   '),
-    (26, '10-round Izh.9x19 Sb.7 magazine                                                   '    , -2   , 0    ,  0   , 10 ,'9x19 mm   '),
-    (26, '10-round polymer magazine 7.62x54R for SV-98                                      '    ,   0   ,   0  ,   0  , 10 ,'7.62x54 mm'),
-    (26, '10-round Saiga 545 5.45x39 magazine for AK-74 and compatibles                     '    , 1    , -30 , -10 , 10 ,'5.45x39 mm'),
-    (26, '10-round SVD 7.62x54 magazine                                                     '    , -1   , -15 , -15 , 10 ,'7.62x54 mm'),
-    (26, '10-shell M870x10 12ga magazine                                                    '    , -3   ,  0   ,  0   , 10 ,'12x70 mm  '),
-    (26, '12.7x55 magazine for ASh-12, 10-round capacity                                    '    , -3   ,  0   , 0    , 10 ,'12.7x55 mm'),
-    (26, '7.62x39 ribbed metal magazine for AK and compatibles, 10-round capacity           '    , 1    , -30 , -10 , 10 ,'7.62x39 mm'),
-    (26, '7.62x51 metal magazine for VPO-101 and compatibles, 10-round capacity             '    ,    0  , -15 ,  0   , 10 ,'7.62x51 mm'),
-    (26, '7.62x54r ProMag OPFOR for Archangel Mosin rifle kit, 10-round capacity            '    , -1   , 0    ,   0  , 10 ,'7.62x54 mm'),
-    (26, 'FAL/SA-58 7.62x51 10 rnd                                                          '    ,   0   ,  0   ,   0  , 10 ,'7.62x51 mm'),
-    (26, 'Izhmash 7.62x39 AK aluminium magazine for AK and compatibles, 10-round capacity   '    , 1    , -5  , -5  , 10 ,'7.62x39 mm'),
-    (26, 'KAC Steel 10 7.62x51 10 rnd                                                       '    ,   0   ,   0  ,   0  , 10 ,'7.62x51 mm'),
-    (26, 'Magpul PMAG .308 AC 10-round M700 magazine                                        '    , -1   , -30 , 0    , 10 ,'7.62x51 mm'),
-    (26, 'PMAG GEN M3 10 5.56x45 STANAG 10-round magazine                                   '    , 1    ,   0  , 0    , 10 ,'5.56x45 mm'),
-    (26, 'Promag AA-70 10-round .308 M700 magazine                                          '    , -1   ,   0  , -15 , 10 ,'7.62x51 mm'),
-    (26, 'SAI-02 10-round 12x76 magazine for SOK-12 and compatible weapons                  '    , -7   ,  0   ,  0   , 10 ,'12x70 mm  '),
-    (26, 'Mec-Gar .45 ACP 11-round magazine for M1911A1                                     '    , -3   , -20 , -25 , 11 ,'.45 mm    '),
-    (26, '12-round .308 MDT AICS M700 magazine                                              '    , -3   ,  0   , -15 , 12 ,'7.62x51 mm'),
-    (26, 'P226 magazine                                                                     '    ,   0   ,  0   ,  0   , 15 ,'9x19 mm   '),
-    (26, 'Standard 9x19 15-round magazine for MP9                                           '    ,   0   ,   0  ,  0   , 15 ,'9x19 mm   '),
-    (26, 'Glock 9x19 magazine                                                               '    ,   0   , -20 , -10 , 17 ,'9x19 mm   '),
-    (26, 'M9A3 9x19 17-round magazine                                                       '    ,  0    ,  0   ,  0   , 17 ,'9x19 mm   '),
-    (26, 'MP-443 9x19 18-round magazine                                                     '    ,    0  ,   0  ,  0   , 18 ,'9x19 mm   '),
-    (26, 'SR1-MP magazine                                                                   '    ,    0  , -20 ,   0  , 18 ,'9x21 mm   '),
-    (26, '12.7x55 magazine for ASh-12, 20-round capacity                                    '    , -5   ,  0   , 15  , 20 ,'12.7x55 mm'),
-    (26, '20-round 6L25 9x39 VSS magazine                                                   '    , -2   ,  0   ,  0   , 20 ,'9x39 mm   '),
-    (26, '20-round SVD 7.62x54 magazine                                                     '    , -2   ,   0  ,  0   , 20 ,'7.62x54 mm'),
-    (26, 'FAL/SA-58 "MMW" 7.62x51 20 rnd plastic mag                                        '    , 1    ,   0  , -10 , 20 ,'7.62x51 mm'),
-    (26, 'FAL/SA-58 7.62x51 20 rnd                                                          '    , -3   ,   0  ,  0   , 20 ,'7.62x51 mm'),
-    (26, 'Five-seveN 20-Round 5.7x28 magazine                                               '    ,   0   ,  0  , 0    , 20 ,'5.7x28 mm '),
-    (26, 'KAC Steel 20 7.62x51 20 rnd                                                       '    , -2   ,   0  ,  0   , 20 ,'7.62x51 mm'),
-    (26, 'M1A 20 round 7.62x51 magazine                                                     '    , -2   ,   0  ,  0   , 20 ,'7.62x51 mm'),
-    (26, 'MaxRounds Powermag 20-round 12/76 magazine for SOK-12 and compatible weapons      '    , -20  , 0    , 15  , 20 ,'12x70 mm  '),
-    (26, 'P226 Extended magazine 9x19                                                       '    ,  0    ,   0  , 0    , 20 ,'9x19 mm   '),
-    (26, 'PMAG GEN M3 20 5.56x45 STANAG 20-round magazine                                   '    , -1   ,   0  , 0    , 20 ,'5.56x45 mm'),
-    (26, 'PMAG SR/LR GEN M3 20 7.62x51 20 rnd                                               '    , -2   ,  0   , 0    , 20 ,'7.62x51 mm'),
-    (26, 'Promag AA-70 20-round .308 M700 magazine                                          '    , -4   ,  0   , -15 , 20 ,'7.62x51 mm'),
-    (26, 'ProMag SKS-A5 7.62x39 20-round SKS magazine                                       '    , -3   , 10  , 10  , 20 ,'7.62x39 mm'),
-    (26, 'PUFGUN SG-919 20 20-round 9x19 magazine for PP-19-01                              '    ,   0   ,  0   , -15 , 20 ,'9x19 mm   '),
-    (26, 'Standard 9x18PM 20-round magazine for PP-91                                       '    ,   0   ,  0   ,  0   , 20 ,'9x18 mm   '),
-    (26, 'Standard 9x19 20-round magazine for MP9                                           '    ,    0  ,  0   ,   0  , 20 ,'9x19 mm   '),
-    (26, 'Standard APS 9x18PM 20-round magazine                                             '    ,    0  , -30 ,  0   , 20 ,'9x18 mm   '),
-    (26, 'Standard MP5 20-round 9x19 magazine                                               '    ,   0   ,   0  ,  0   , 20 ,'9x19 mm   '),
-    (26, 'Standard MP7 20-round 4.6x30 magazine                                             '    ,   0   ,0     ,  0   , 20 ,'4.6x30 mm '),
-    (26, 'Standard MPX 20-round 9x19 magazine                                               '    ,    0  , -50 ,   0  , 20 ,'9x19 mm   '),
-    (26, 'Pmag GL9 polymer magazine                                                         '    , -2   , -30 , -10 , 21 ,'9x19 mm   '),
-    (26, 'Standard 9x19 25-round magazine for MP9                                           '    , -1   ,  0   ,  0   , 25 ,'9x19 mm   '),
-    (26, '30-round 5.45x39 magazine for AK-12 and compatibles                               '    , -2   , -20 , -10 , 30 ,'5.45x39 mm'),
-    (26, '30-round 6L23 5.45x39 magazine for AK-74 and compatibles                          '    , -3   , 0    ,  0   , 30 ,'5.45x39 mm'),
-    (26, '30-round 7.62x39 magazine for АK-103 and compatible weapons                       '    , -3   ,   0  ,  0   , 30 ,'7.62x39 mm'),
-    (26, '30-round SR3M.130 9x39 SR3M magazine                                              '    , -5   ,   0  ,  0   , 30 ,'9x39 mm   '),
-    (26, '6L20 30-round 5.45x39 magazine for AK-74 and compatible weapons                   '    , -3   ,  0   , 0    , 30 ,'5.45x39 mm'),
-    (26, '6L29 30-round 5.56x45 magazine for АK-101 and compatible weapons                  '    , -3   ,0     ,  0   , 30 ,'5.56x45 mm'),
-    (26, 'Arsenal CWP 30-round 5.56x45 magazine for SLR-106 and compatible weapons          '    , -2   , -50 ,  0   , 30 ,'5.56x45 mm'),
-    (26, 'British FAL/L1A1 7.62x51 30 rnd magazine                                          '    , -3   ,   0  ,  0   , 30 ,'7.62x51 mm'),
-    (26, 'Colt AR-15 5.56x45 STANAG 30-round magazine                                       '    , -5   ,   0  ,  0   , 30 ,'5.56x45 mm'),
-    (26, 'FAL/SA-58 7.62x51 30 rnd                                                          '    , -6   ,   0  ,   0 , 30 ,'7.62x51 mm'),
-    (26, 'HK PM Gen.2 5.56x45 STANAG 30-round magazine                                      '    , -3   ,  0   ,  0   , 30 ,'5.56x45 mm'),
-    (26, 'HK Polymer mag 30 5.56x45 STANAG 30-round magazine                                '    , -3   , 20  ,  0   , 30 ,'5.56x45 mm'),
-    (26, 'HK Steel Maritime 5.56x45 STANAG 30-round magazine                                '    , -3   ,  0   , -10 , 30 ,'5.56x45 mm'),
-    (26, 'Izhmash 6L10 7.62x39 magazine for AK and compatibles, 30-round capacity           '    , -3   ,   0  ,  0   , 30 ,'7.62x39 mm'),
-    (26, 'Izhmash 7.62x39 AKMS aluminium magazine for AK and compatibles, 30-round capacity '    , -1   , -5  , -5  , 30 ,'7.62x39 mm'),
-    (26, 'Izhmash AK magazine (issued ‘55 or later) 30-round for 7.62x39 AK and compatibles '    , -4   ,   0  ,  0   , 30 ,'7.62x39 mm'),
-    (26, 'M14 30 round 7.62x51 magazine                                                     '    , -4   ,  0   ,  0   , 30 ,'7.62x51 mm'),
-    (26, 'Palm US AK30 7.62x39 magazine for AK and compatibles, 30-round capacity           '    , -1   ,  0   , -10 , 30 ,'7.62x39 mm'),
-    (26, 'PMAG 30 AK/AKM GEN M3 7.62x39 magazine for AK and compatibles, 30-round capacity  '    , -1.5 ,   0  , -10 , 30 ,'7.62x39 mm'),
-    (26, 'Pmag 30 AK74 GEN M3 5.45x39 magazine for AK and compatibles, 30-round capacity    '    , -1.5 ,   0  , 0    , 30 ,'5.45x39 mm'),
-    (26, 'PMAG GEN M3 30 5.56x45 STANAG 30-round magazine                                   '    , -4   ,   0  ,  0   , 30 ,'5.56x45 mm'),
-    (26, 'PMAG GEN M3 W 30 5.56x45 STANAG 30-round magazine                                 '    , -4   , -35 ,   0  , 30 ,'5.56x45 mm'),
-    (26, 'PUFGUN SG-919 30 30-round 9x19 magazine for PP-19-01                              '    ,   0   ,   0  , -15 , 30 ,'9x19 mm   '),
-    (26, 'Standard 9x18PM 30-round magazine for PP-91                                       '    ,   0   ,  0   ,  0   , 30 ,'9x18 mm   '),
-    (26, 'Standard 9x19 30-round magazine for MP9                                           '    , -1   ,    0 ,  0   , 30 ,'9x19 mm   '),
-    (26, 'Standard MP5 30-round 9x19 magazine                                               '    ,   0   ,   0  , 0    , 30 ,'9x19 mm   '),
-    (26, 'Standard MP7 30-round 4.6x30 magazine                                             '    , -1   ,   0  ,  0   , 30 ,'4.6x30 mm '),
-    (26, 'Standard MPX 30-round 9x19 magazine                                               '    ,   0   , -50 ,   0  , 30 ,'9x19 mm   '),
-    (26, 'Standard PP-19-01 30-round 9x19 magazine                                          '    , -2   ,  0   , 0    , 30 ,'9x19 mm   '),
-    (26, 'TROY Battlemag 5.56x45 STANAG 30-round magazine                                   '    , -2   ,  0   , -10 , 30 ,'5.56x45 mm'),
-    (26, 'Big Stick 9x19 magazine for Glock 9x19                                            '    , -3   , -30 , -10 , 33 ,'9x19 mm   '),
-    (26, '35-round 7.62x25 magazine for PPSH-41                                             '    , -3   , 20  , 20  , 35 ,'7.62x25 mm'),
-    (26, 'ProMag AALVX 35 7.62x39 35-round SKS magazine.                                    '    , -7   , 20  , 20  , 35 ,'7.62x39 mm'),
-    (26, '40-round PMAG GEN M3 40 5.56x45 STANAG magazine                                   '    , -7   , 15  , 10  , 40 ,'5.56x45 mm'),
-    (26, 'Bakelite 7.62x39 magazine for AK and compatibles, 40-round capacity               '    , -6   , 20  ,  0   , 40 ,'7.62x39 mm'),
-    (26, 'Molot 6P2.Sb-11 7.62x39 magazine for AK and compatibles, 40-round capacity        '    , -6   , 20  ,  0   , 40 ,'7.62x39 mm'),
-    (26, 'Standard MP7 40-round 4.6x30 magazine                                             '    , -2   ,  0   ,  0   , 40 ,'4.6x30 mm '),
-    (26, 'MPX with TTI Base pad +11 41-round 9x19 magazine                                  '    , -1   , -50 ,  0   , 41 ,'9x19 mm   '),
-    (26, '45-round 6L26 5.45x39 magazine for AK-74 and compatibles                          '    , -7   , 15  ,  0   , 45 ,'5.45x39 mm'),
-    (26, '6L18 45-round 5.45x39 magazine for AK-74 and compatible weapons                   '    , -7   , 15  ,  0   , 45 ,'5.45x39 mm'),
-    (26, 'F5 MPX Drum mag 50-round 9x19 magazine                                            '    , -5   , 15  , 15  , 50 ,'9x19 mm   '),
-    (26, 'FN magazine for P90, 50-round capacity                                            '    ,   0   , -20 , 75  , 50 ,'5.7x28 mm '),
-    (26, 'SGMT Drum mag for Glock 9x19, 50 rounds capacity                                  '    , -15  , 20  , -10 , 50 ,'9x19 mm   '),
-    (26, 'X Products X-5 MP5 50-round 9x19 magazine                                         '    , -2   , 15  , 15  , 50 ,'9x19 mm   '),
-    (26, 'X-14 M14 50 round 7.62x51 magazine                                                '    , -10  , 15  , 25  , 50 ,'7.62x51 mm'),
-    (26, 'X-47 AK 7.62x39 50 rnd magazine                                                   '    , -8   , 20  , 15  , 50 ,'7.62x39 mm'),
-    (26, 'X-FAL FAL/SA-58 7.62x51 50 rnd magazine                                           '    , -16  , 20  ,  0   , 50 ,'7.62x51 mm'),
-    (26, '60-round 6L31 5.45x39 magazine for AK-74 and compatibles                          '    , -10  , 20  , 50  , 60 ,'5.45x39 mm'),
-    (26, '60-round MAG5-60 5.56x45 STANAG magazine                                          '    , -15  , 25  , 20  , 60 ,'5.56x45 mm'),
-    (26, 'Magpul PMAG D-60 5.56x45 60-round magazine                                        '    , -12  , 20  , 15  , 60 ,'5.56x45 mm'),
-    (26, '71-round 7.62x25 magazine for PPSH-41                                             '    , -9   , 30  , 35  , 71 ,'7.62x25 mm'),
-    (26, 'ProMag AK-A-16 73-round 7.62x39 magazine for AKM and compatibles                  '    , -17  , 15  , 22  , 73 ,'7.62x39 mm'),
-    (26, 'Molot magazine for AK and compatibles, 75-round capacity                          '    , -26  , 30  , 35  , 75 ,'7.62x39 mm'),
-    (26, 'PM/PPSH 9x18PM 84-round drum mag for PM                                           '    , -20  , 25  , 25  , 84 ,'9x18 mm   '),
-    (26, '95-round 5.45x39 magazine for RPK-16 and compatibles                              '    , -19  , 25  , 40  , 95 ,'5.45x39 mm'),
-    (26, '100-round MAG5-100 5.56x45 STANAG magazine                                        '    , -27  , 30  , 30  , 100,'5.56x45 mm');
+insert into Magazine(m_class, m_name, m_ergo, m_checkSpeed, m_loadSpeed, m_capacity, m_caliber)
+    values (26, '2-shot MC 20-01 Sb.3 20ga magazine for TOZ-106                                    ',   0   ,  0   , -20 , 2  ,'20x70 mm'),
+    (26, '3-shell KS-23M 23mm magazine cap                                                  ', -1   ,  0   ,  0   , 3  ,'23x75 mm'),
+    (26, '4-shell M870 12ga magazine cap                                                    ', -1   ,  0   , 0    , 4  ,'20x70 mm'),
+    (26, '4-shot MC 20-01 Sb.3 20ga magazine for TOZ-106                                    ',   0   ,  0   , -20 , 4  ,'12x70 mm'),
+    (26, 'Metal magazine for VPO-215 and compatibles, .366 TKM 4-round capacity             ', 1    , -15 ,   0  , 4  ,'.366'),
+    (26, 'MP-153 forend cap                                                                 ',   0   ,   0  ,   0  , 4  ,'12x70 mm'),
+    (26, '5-round .308 AICS M700 magazine                                                   ',  0    ,   0  , -15 , 5  ,'7.62x51 mm'),
+    (26, '5-round .308 M700 magazine                                                        ',   0   ,   0  , -5  , 5  ,'7.62x51 mm'),
+    (26, '5-round .308 T-5000 magazine                                                      ',   0   ,   0  , -5  , 5  ,'7.62x51 mm'),
+    (26, '5-shot MC 20-01 Sb.3 20ga magazine for TOZ-106                                    ', -1   ,   0  , -10 , 5  ,'20x70 mm'),
+    (26, '7.62x51 metal magazine for VPO-101 and compatibles, 5-round capacity              ', 1    , -30 , -10 , 5  ,'7.62x51 mm'),
+    (26, 'Magpul PMAG .308 AC 5-round M700 magazine                                         ',   0   , -30 ,   0  , 5  ,'7.62x51 mm'),
+    (26, 'MP-153 5-rd magazine extension                                                    ', -1   ,  0   ,  0   , 5  ,'12x70 mm'),
+    (26, 'Regular 4rnd magazine for Mosin rifle                                             ', -1   ,   0  , 0    , 5  ,'7.62x54 mm'),
+    (26, 'Sb.5 5-round 12/76 magazine for SOK-12 and compatible weapons                     ', -2   ,   0  , -15 , 5  ,'20x70 mm'),
+    (26, '6-shell MP-133x6 12ga magazine                                                    ', -1   ,  0   ,  0   , 6  ,'12x70 mm'),
+    (26, 'MP-153 6-rd magazine extension                                                    ', -2   , 0    ,  0   , 6  ,'12x70 mm'),
+    (26, '7-shell M870x7 12ga magazine                                                      ', -2   ,  0   ,  0   , 7  ,'12x70 mm'),
+    (26, 'M1911 .45 ACP 7-round magazine                                                    ',    0  , -20 , -25 , 7  ,'.45 mm'),
+    (26, 'M45A1 .45 ACP 7-round magazine                                                    ',    0  , -20 , -25 , 7  ,'.45 mm'),
+    (26, 'MP-153 7-rd magazine extension                                                    ', -3   , 0    ,  0   , 7  ,'12x70 mm'),
+    (26, '8-shell M590A1 12ga magazine cap                                                  ', -2   ,   0  , 0    , 8  ,'12x70 mm'),
+    (26, '8-shell MP-133x8 12ga magazine                                                    ', -2   ,  0   ,  0   , 8  ,'12x70 mm'),
+    (26, '90-93 9x18PM Magazine, for 8 PM rounds                                            ',   0   , -20 , -20 , 8  ,'9x18 mm'),
+    (26, 'MP-153 8-rd magazine extension                                                    ', -4   ,  0   ,   0  , 8  ,'12x70 mm'),
+    (26, 'TT-105 7.62x25 TT Magazine                                                        ',   0   , -20 , -15 , 8  ,'7.62x25 mm'),
+    (26, '10 rnds. SKS internal box magazine 7.62x39                                        ',   0   ,  0   ,  0   , 10 ,'7.62x39 mm'),
+    (26, '10-round .308 AICS M700 magazine                                                  ', -2   ,   0  , -15 , 10 ,'7.62x51 mm'),
+    (26, '10-round .308 DVL-10 magazine                                                     ',    0  ,  0   , -15 , 10 ,'7.62x51 mm'),
+    (26, '10-round .308 M700 magazine                                                       ', -2   ,  0   , -5  , 10 ,'7.62x51 mm'),
+    (26, '10-round 6L24 9x39 VSS magazine                                                   ',   0   ,   0  ,   0  , 10 ,'9x39 mm'),
+    (26, '10-round Izh.9x19 Sb.7 magazine                                                   ', -2   , 0    ,  0   , 10 ,'9x19 mm'),
+    (26, '10-round polymer magazine 7.62x54R for SV-98                                      ',   0   ,   0  ,   0  , 10 ,'7.62x54 mm'),
+    (26, '10-round Saiga 545 5.45x39 magazine for AK-74 and compatibles                     ', 1    , -30 , -10 , 10 ,'5.45x39 mm'),
+    (26, '10-round SVD 7.62x54 magazine                                                     ', -1   , -15 , -15 , 10 ,'7.62x54 mm'),
+    (26, '10-shell M870x10 12ga magazine                                                    ', -3   ,  0   ,  0   , 10 ,'12x70 mm'),
+    (26, '12.7x55 magazine for ASh-12, 10-round capacity                                    ', -3   ,  0   , 0    , 10 ,'12.7x55 mm'),
+    (26, '7.62x39 ribbed metal magazine for AK and compatibles, 10-round capacity           ', 1    , -30 , -10 , 10 ,'7.62x39 mm'),
+    (26, '7.62x51 metal magazine for VPO-101 and compatibles, 10-round capacity             ',    0  , -15 ,  0   , 10 ,'7.62x51 mm'),
+    (26, '7.62x54r ProMag OPFOR for Archangel Mosin rifle kit, 10-round capacity            ', -1   , 0    ,   0  , 10 ,'7.62x54 mm'),
+    (26, 'FAL/SA-58 7.62x51 10 rnd                                                          ',   0   ,  0   ,   0  , 10 ,'7.62x51 mm'),
+    (26, 'Izhmash 7.62x39 AK aluminium magazine for AK and compatibles, 10-round capacity   ', 1    , -5  , -5  , 10 ,'7.62x39 mm'),
+    (26, 'KAC Steel 10 7.62x51 10 rnd                                                       ',   0   ,   0  ,   0  , 10 ,'7.62x51 mm'),
+    (26, 'Magpul PMAG .308 AC 10-round M700 magazine                                        ', -1   , -30 , 0    , 10 ,'7.62x51 mm'),
+    (26, 'PMAG GEN M3 10 5.56x45 STANAG 10-round magazine                                   ', 1    ,   0  , 0    , 10 ,'5.56x45 mm'),
+    (26, 'Promag AA-70 10-round .308 M700 magazine                                          ', -1   ,   0  , -15 , 10 ,'7.62x51 mm'),
+    (26, 'SAI-02 10-round 12x76 magazine for SOK-12 and compatible weapons                  ', -7   ,  0   ,  0   , 10 ,'12x70 mm  '),
+    (26, 'Mec-Gar .45 ACP 11-round magazine for M1911A1                                     ', -3   , -20 , -25 , 11 ,'.45 mm'),
+    (26, '12-round .308 MDT AICS M700 magazine                                              ', -3   ,  0   , -15 , 12 ,'7.62x51 mm'),
+    (26, 'P226 magazine                                                                     ',   0   ,  0   ,  0   , 15 ,'9x19 mm'),
+    (26, 'Standard 9x19 15-round magazine for MP9                                           ',   0   ,   0  ,  0   , 15 ,'9x19 mm'),
+    (26, 'Glock 9x19 magazine                                                               ',   0   , -20 , -10 , 17 ,'9x19 mm'),
+    (26, 'M9A3 9x19 17-round magazine                                                       ',  0    ,  0   ,  0   , 17 ,'9x19 mm'),
+    (26, 'MP-443 9x19 18-round magazine                                                     ',    0  ,   0  ,  0   , 18 ,'9x19 mm'),
+    (26, 'SR1-MP magazine                                                                   ',    0  , -20 ,   0  , 18 ,'9x21 mm'),
+    (26, '12.7x55 magazine for ASh-12, 20-round capacity                                    ', -5   ,  0   , 15  , 20 ,'12.7x55 mm'),
+    (26, '20-round 6L25 9x39 VSS magazine                                                   ', -2   ,  0   ,  0   , 20 ,'9x39 mm'),
+    (26, '20-round SVD 7.62x54 magazine                                                     ', -2   ,   0  ,  0   , 20 ,'7.62x54 mm'),
+    (26, 'FAL/SA-58 "MMW" 7.62x51 20 rnd plastic mag                                        ', 1    ,   0  , -10 , 20 ,'7.62x51 mm'),
+    (26, 'FAL/SA-58 7.62x51 20 rnd                                                          ', -3   ,   0  ,  0   , 20 ,'7.62x51 mm'),
+    (26, 'Five-seveN 20-Round 5.7x28 magazine                                               ',   0   ,  0  , 0    , 20 ,'5.7x28 mm '),
+    (26, 'KAC Steel 20 7.62x51 20 rnd                                                       ', -2   ,   0  ,  0   , 20 ,'7.62x51 mm'),
+    (26, 'M1A 20 round 7.62x51 magazine                                                     ', -2   ,   0  ,  0   , 20 ,'7.62x51 mm'),
+    (26, 'MaxRounds Powermag 20-round 12/76 magazine for SOK-12 and compatible weapons      ', -20  , 0    , 15  , 20 ,'12x70 mm'),
+    (26, 'P226 Extended magazine 9x19                                                       ',  0    ,   0  , 0    , 20 ,'9x19 mm'),
+    (26, 'PMAG GEN M3 20 5.56x45 STANAG 20-round magazine                                   ', -1   ,   0  , 0    , 20 ,'5.56x45 mm'),
+    (26, 'PMAG SR/LR GEN M3 20 7.62x51 20 rnd                                               ', -2   ,  0   , 0    , 20 ,'7.62x51 mm'),
+    (26, 'Promag AA-70 20-round .308 M700 magazine                                          ', -4   ,  0   , -15 , 20 ,'7.62x51 mm'),
+    (26, 'ProMag SKS-A5 7.62x39 20-round SKS magazine                                       ', -3   , 10  , 10  , 20 ,'7.62x39 mm'),
+    (26, 'PUFGUN SG-919 20 20-round 9x19 magazine for PP-19-01                              ',   0   ,  0   , -15 , 20 ,'9x19 mm'),
+    (26, 'Standard 9x18PM 20-round magazine for PP-91                                       ',   0   ,  0   ,  0   , 20 ,'9x18 mm'),
+    (26, 'Standard 9x19 20-round magazine for MP9                                           ',    0  ,  0   ,   0  , 20 ,'9x19 mm'),
+    (26, 'Standard APS 9x18PM 20-round magazine                                             ',    0  , -30 ,  0   , 20 ,'9x18 mm'),
+    (26, 'Standard MP5 20-round 9x19 magazine                                               ',   0   ,   0  ,  0   , 20 ,'9x19 mm'),
+    (26, 'Standard MP7 20-round 4.6x30 magazine                                             ',   0   ,0     ,  0   , 20 ,'4.6x30 mm'),
+    (26, 'Standard MPX 20-round 9x19 magazine                                               ',    0  , -50 ,   0  , 20 ,'9x19 mm'),
+    (26, 'Pmag GL9 polymer magazine                                                         ', -2   , -30 , -10 , 21 ,'9x19 mm'),
+    (26, 'Standard 9x19 25-round magazine for MP9                                           ', -1   ,  0   ,  0   , 25 ,'9x19 mm'),
+    (26, '30-round 5.45x39 magazine for AK-12 and compatibles                               ', -2   , -20 , -10 , 30 ,'5.45x39 mm'),
+    (26, '30-round 6L23 5.45x39 magazine for AK-74 and compatibles                          ', -3   , 0    ,  0   , 30 ,'5.45x39 mm'),
+    (26, '30-round 7.62x39 magazine for АK-103 and compatible weapons                       ', -3   ,   0  ,  0   , 30 ,'7.62x39 mm'),
+    (26, '30-round SR3M.130 9x39 SR3M magazine                                              ', -5   ,   0  ,  0   , 30 ,'9x39 mm'),
+    (26, '6L20 30-round 5.45x39 magazine for AK-74 and compatible weapons                   ', -3   ,  0   , 0    , 30 ,'5.45x39 mm'),
+    (26, '6L29 30-round 5.56x45 magazine for АK-101 and compatible weapons                  ', -3   ,0     ,  0   , 30 ,'5.56x45 mm'),
+    (26, 'Arsenal CWP 30-round 5.56x45 magazine for SLR-106 and compatible weapons          ', -2   , -50 ,  0   , 30 ,'5.56x45 mm'),
+    (26, 'British FAL/L1A1 7.62x51 30 rnd magazine                                          ', -3   ,   0  ,  0   , 30 ,'7.62x51 mm'),
+    (26, 'Colt AR-15 5.56x45 STANAG 30-round magazine                                       ', -5   ,   0  ,  0   , 30 ,'5.56x45 mm'),
+    (26, 'FAL/SA-58 7.62x51 30 rnd                                                          ', -6   ,   0  ,   0 , 30 ,'7.62x51 mm'),
+    (26, 'HK PM Gen.2 5.56x45 STANAG 30-round magazine                                      ', -3   ,  0   ,  0   , 30 ,'5.56x45 mm'),
+    (26, 'HK Polymer mag 30 5.56x45 STANAG 30-round magazine                                ', -3   , 20  ,  0   , 30 ,'5.56x45 mm'),
+    (26, 'HK Steel Maritime 5.56x45 STANAG 30-round magazine                                ', -3   ,  0   , -10 , 30 ,'5.56x45 mm'),
+    (26, 'Izhmash 6L10 7.62x39 magazine for AK and compatibles, 30-round capacity           ', -3   ,   0  ,  0   , 30 ,'7.62x39 mm'),
+    (26, 'Izhmash 7.62x39 AKMS aluminium magazine for AK and compatibles, 30-round capacity ', -1   , -5  , -5  , 30 ,'7.62x39 mm'),
+    (26, 'Izhmash AK magazine (issued ‘55 or later) 30-round for 7.62x39 AK and compatibles ', -4   ,   0  ,  0   , 30 ,'7.62x39 mm'),
+    (26, 'M14 30 round 7.62x51 magazine                                                     ', -4   ,  0   ,  0   , 30 ,'7.62x51 mm'),
+    (26, 'Palm US AK30 7.62x39 magazine for AK and compatibles, 30-round capacity           ', -1   ,  0   , -10 , 30 ,'7.62x39 mm'),
+    (26, 'PMAG 30 AK/AKM GEN M3 7.62x39 magazine for AK and compatibles, 30-round capacity  ', -1.5 ,   0  , -10 , 30 ,'7.62x39 mm'),
+    (26, 'Pmag 30 AK74 GEN M3 5.45x39 magazine for AK and compatibles, 30-round capacity    ', -1.5 ,   0  , 0    , 30 ,'5.45x39 mm'),
+    (26, 'PMAG GEN M3 30 5.56x45 STANAG 30-round magazine                                   ', -4   ,   0  ,  0   , 30 ,'5.56x45 mm'),
+    (26, 'PMAG GEN M3 W 30 5.56x45 STANAG 30-round magazine                                 ', -4   , -35 ,   0  , 30 ,'5.56x45 mm'),
+    (26, 'PUFGUN SG-919 30 30-round 9x19 magazine for PP-19-01                              ',   0   ,   0  , -15 , 30 ,'9x19 mm'),
+    (26, 'Standard 9x18PM 30-round magazine for PP-91                                       ',   0   ,  0   ,  0   , 30 ,'9x18 mm'),
+    (26, 'Standard 9x19 30-round magazine for MP9                                           ', -1   ,    0 ,  0   , 30 ,'9x19 mm'),
+    (26, 'Standard MP5 30-round 9x19 magazine                                               ',   0   ,   0  , 0    , 30 ,'9x19 mm'),
+    (26, 'Standard MP7 30-round 4.6x30 magazine                                             ', -1   ,   0  ,  0   , 30 ,'4.6x30 mm'),
+    (26, 'Standard MPX 30-round 9x19 magazine                                               ',   0   , -50 ,   0  , 30 ,'9x19 mm'),
+    (26, 'Standard PP-19-01 30-round 9x19 magazine                                          ', -2   ,  0   , 0    , 30 ,'9x19 mm'),
+    (26, 'TROY Battlemag 5.56x45 STANAG 30-round magazine                                   ', -2   ,  0   , -10 , 30 ,'5.56x45 mm'),
+    (26, 'Big Stick 9x19 magazine for Glock 9x19                                            ', -3   , -30 , -10 , 33 ,'9x19 mm'),
+    (26, '35-round 7.62x25 magazine for PPSH-41                                             ', -3   , 20  , 20  , 35 ,'7.62x25 mm'),
+    (26, 'ProMag AALVX 35 7.62x39 35-round SKS magazine.                                    ', -7   , 20  , 20  , 35 ,'7.62x39 mm'),
+    (26, '40-round PMAG GEN M3 40 5.56x45 STANAG magazine                                   ', -7   , 15  , 10  , 40 ,'5.56x45 mm'),
+    (26, 'Bakelite 7.62x39 magazine for AK and compatibles, 40-round capacity               ', -6   , 20  ,  0   , 40 ,'7.62x39 mm'),
+    (26, 'Molot 6P2.Sb-11 7.62x39 magazine for AK and compatibles, 40-round capacity        ', -6   , 20  ,  0   , 40 ,'7.62x39 mm'),
+    (26, 'Standard MP7 40-round 4.6x30 magazine                                             ', -2   ,  0   ,  0   , 40 ,'4.6x30 mm '),
+    (26, 'MPX with TTI Base pad +11 41-round 9x19 magazine                                  ', -1   , -50 ,  0   , 41 ,'9x19 mm'),
+    (26, '45-round 6L26 5.45x39 magazine for AK-74 and compatibles                          ', -7   , 15  ,  0   , 45 ,'5.45x39 mm'),
+    (26, '6L18 45-round 5.45x39 magazine for AK-74 and compatible weapons                   ', -7   , 15  ,  0   , 45 ,'5.45x39 mm'),
+    (26, 'F5 MPX Drum mag 50-round 9x19 magazine                                            ', -5   , 15  , 15  , 50 ,'9x19 mm'),
+    (26, 'FN magazine for P90, 50-round capacity                                            ',   0   , -20 , 75  , 50 ,'5.7x28 mm'),
+    (26, 'SGMT Drum mag for Glock 9x19, 50 rounds capacity                                  ', -15  , 20  , -10 , 50 ,'9x19 mm'),
+    (26, 'X Products X-5 MP5 50-round 9x19 magazine                                         ', -2   , 15  , 15  , 50 ,'9x19 mm'),
+    (26, 'X-14 M14 50 round 7.62x51 magazine                                                ', -10  , 15  , 25  , 50 ,'7.62x51 mm'),
+    (26, 'X-47 AK 7.62x39 50 rnd magazine                                                   ', -8   , 20  , 15  , 50 ,'7.62x39 mm'),
+    (26, 'X-FAL FAL/SA-58 7.62x51 50 rnd magazine                                           ', -16  , 20  ,  0   , 50 ,'7.62x51 mm'),
+    (26, '60-round 6L31 5.45x39 magazine for AK-74 and compatibles                          ', -10  , 20  , 50  , 60 ,'5.45x39 mm'),
+    (26, '60-round MAG5-60 5.56x45 STANAG magazine                                          ', -15  , 25  , 20  , 60 ,'5.56x45 mm'),
+    (26, 'Magpul PMAG D-60 5.56x45 60-round magazine                                        ', -12  , 20  , 15  , 60 ,'5.56x45 mm'),
+    (26, '71-round 7.62x25 magazine for PPSH-41                                             ', -9   , 30  , 35  , 71 ,'7.62x25 mm'),
+    (26, 'ProMag AK-A-16 73-round 7.62x39 magazine for AKM and compatibles                  ', -17  , 15  , 22  , 73 ,'7.62x39 mm'),
+    (26, 'Molot magazine for AK and compatibles, 75-round capacity                          ', -26  , 30  , 35  , 75 ,'7.62x39 mm'),
+    (26, 'PM/PPSH 9x18PM 84-round drum mag for PM                                           ', -20  , 25  , 25  , 84 ,'9x18 mm'),
+    (26, '95-round 5.45x39 magazine for RPK-16 and compatibles                              ', -19  , 25  , 40  , 95 ,'5.45x39 mm'),
+    (26, '100-round MAG5-100 5.56x45 STANAG magazine                                        ', -27  , 30  , 30  , 100,'5.56x45 mm');
 
--- -- Q1: Print entire Classes table
--- select * 
--- from Classes;
+-- Q1: Print entire Classes table
+select * 
+from Classes;
 
--- -- Q2: Print all Classes and the total number of items
--- select c_class as Class, c_total as Total
--- from Classes;
+-- Q2: Print all Classes and the total number of items
+select c_class as Class, c_total as Total
+from Classes;
 
--- -- Q3: Print all weapons under the Assualt Rifle class
--- select weapon_name as Assault_Rifles
--- from Weapons, Classes
+-- Q3: Print all weapons under the Assualt Rifle class
+select w_name as Assault_Rifles
+from Weapons, Classes
+where c_num = w_class AND 
+        c_num = 1;
+
+-- Q4: Print total number of ammo types per weapon; order by totAmmo_types descending
+select w_name as Weapon, count(a_ammunition) as totAmmo_types
+from Weapons, Ammunition
+where w_caliber = a_caliber
+group by Weapon
+order by totAmmo_types desc;
+
+-- Q5: Print all backpack having greater than 20 inventory slots
+select b_name as Backpack, b_totalSlots as Inventory_Space
+from Backpack
+group by Backpack
+having b_totalSlots > 20;
+
+-- Q6: Print all armors that do not protect the thorax and stomach
+select arm_name as Armors, arm_zones as Protects
+from Armor
+where arm_zones <> 'Thorax and Stomach';
+
+-- Q7: Print the average fire rate of each weapon class
+select c_class as Class, avg(w_fireRate) as Avg_fireRate
+from Classes, Weapons
+where c_num = w_class
+group by Class;
+
+-- Q8: Print total number of items accounted for
+select sum(c_total) as totItems
+from Classes;
+
+-- Q9: Print all gear mods for SKS
+select g_name as Gear_mods
+from GearMods
+where g_name LIKE '%SKS%';
+
+-- Q10: Print all gear mods that produce recoil; order in ascending order
+select g_name as Gear_mods, g_recoil as Recoil
+from GearMods
+where g_recoil <> 0
+order by Recoil asc;
+
+-- Q11: Print all attachments for the AS VAL
+select distinct g_name as Attachments, g_class as Class
+from GearMods
+where g_name LIKE '%AS VAL%'
+group by Attachments
+union 
+select distinct v_name as Attachments, v_class as Class
+from VitalParts
+where v_name LIKE '%AS VAL%'
+group by Attachments
+union
+select distinct s_name as Attachments, s_class as Class
+from Sights
+where s_name LIKE '%AS VAL%'
+group by Attachments;
+-- union 
+-- select distinct m_name as Attachments, m_class as Class
+-- from Magazine, Weapons
+-- where w_caliber = m_caliber AND
+--         w_name = 'AS VAL'
+-- group by Attachments;
+-- This doesnt work beacuse naming doesn't match (TODO: FIX Naming for each table)
+
+-- Q12: Print all magazines compatible with 12x70 mm caliber
+select m_name as Magazines
+from Magazine
+where m_caliber LIKE '%12x70 mm%'; --This will need to change after format issues are fixed
+
+-- Q13: Print all magazines compatible with 5.45x39 mm that can hold more than 30 bullets
+select m_name as Magazines, m_capacity as Capacity
+from Magazine
+where m_caliber LIKE '%5.45x39 mm%' AND
+        m_capacity > 30;
+
+-- Q14: Print all Magazines compatible with 5.45x39 mm and AK variants, print all their information
+select *
+from Magazine
+where m_caliber LIKE '%5.45x39 mm%' AND
+        m_name LIKE '%AK%';
+
+-- Q15: Print the name of all wearables
+select arm_name as Wearables
+from Armor
+union
+select b_name as Wearables
+from Backpack;
+
+-- Q16: Print the armor piece with largest durability, select all of its information
+select arm_name as Armor, arm_penType as PenType, arm_zones as Protects, max(arm_durability) as Durability,
+        arm_movement_speed as MoveSpeed, arm_turn_speed as TurnSpeed, arm_ergo as Ergonomics
+from Armor;
+
+-- Q17: Print the armor with the greatest and least durabilty
+select arm_name as Armor, arm_penType as PenType, arm_zones as Protects, max(arm_durability) as Durability,
+        arm_movement_speed as MoveSpeed, arm_turn_speed as TurnSpeed, arm_ergo as Ergonomics
+from Armor
+union
+select arm_name as Armor, arm_penType as PenType, arm_zones as Protects, min(arm_durability) as Durability,
+        arm_movement_speed as MoveSpeed, arm_turn_speed as TurnSpeed, arm_ergo as Ergonomics
+from Armor;
+
+-- Q18: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Keep testing this one!!
+-- Q11: Print all attachments for each Assault Carbine
+-- select distinct w_name as Assualt_Carbine, g_name as GearMod, v_name as VitalPart, s_name as Sight, m_name as Magazines
+-- from Classes, Weapons, GearMods, VitalParts, Sights, Magazine
 -- where c_num = w_class AND 
---         c_num = 1;
+--         w_caliber = m_caliber AND 
+--         c_num = 2 AND
+--         g_name IN (select g_name
+--                     from GearMods
+--                     where g_name LIKE '%AS VAL%' OR
+--                             g_name LIKE '%OP-SKS%' OR
+--                             g_name LIKE '%SKS%' OR
+--                             g_name LIKE '%Vepr Hunter/VP0-101%') AND
+--         v_name IN (select v_name
+--                     from VitalParts
+--                     where v_name LIKE '%AS VAL%' OR
+--                             v_name LIKE '%OP-SKS%' OR
+--                             v_name LIKE '%SKS%' OR
+--                             v_name LIKE '%Vepr Hunter/VP0-101%') AND
+--         s_name IN (select s_name
+--                     from Sights
+--                     where s_name LIKE '%AS VAL%' OR
+--                             s_name LIKE '%OP-SKS%' OR
+--                             s_name LIKE '%SKS%' OR
+--                             s_name LIKE '%Vepr Hunter/VP0-101%');                           
 
--- -- Q4: Print total number of ammo types per weapon; order by totAmmo_types descending
--- select weapon_name as Weapon, count(a_ammunition) as totAmmo_types
--- from Weapons, Ammunition
--- where w_caliber = a_caliber
--- order by totAmmo_types desc;
 
--- -- Q5: Print all backpack having greater than 20 inventory slots
--- select b_name as Backpack
--- from Backpack
--- group by Backpack
--- having b_totalSlots > 20;
-
--- -- Q6: Print all armors that do not protect the thorax and stomach
--- select arm_name as Armors
--- from Armor
--- where arm_zones <> 'Thorax and Stomach';
-
--- -- Q7: Print the average fire rate of each weapon class
--- select c_class as Class, avg(fire_rate) as Avg_fireRate
--- from Classes, Weapons
--- where c_num = w_class;
-
--- -- Q8: Print total number of items accounted for
--- select sum(c_total) as totItems
--- from Classes;
-
--- -- Q9: Print all gear mods for SKS
--- select g_name as Gear_mods
--- from GearMods
--- where g_name LIKE '%SKS%';
-
--- -- Q10: Print all gear mods that produce recoil; order in ascending order
--- select g_name as Gear_mods, g_recoil as Recoil
--- from GearMods
--- where g_recoil <> 0
--- order by Recoil asc;
-
--- -- Q11: 
