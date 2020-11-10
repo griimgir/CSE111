@@ -70,3 +70,4 @@ create table Magazine(
     m_loadSpeed integer,
     m_capacity varchar(32)
 );
+
