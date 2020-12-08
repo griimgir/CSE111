@@ -27,32 +27,17 @@ def closeConnection(_conn, _dbFile):
         print(e)
     print("++++++++++++++++++++++++++++++++++")
 
-def selectWeapons(_conn):
+def selectWeapon(_conn):
     try:
         sql = """select *
-                from Weapons"""
+                from Classes"""
         
         cur = _conn.cursor()
         cur.execute(sql)
         rows = cur.fetchall()
-        sample = open("output/weapons.txt", "w")
-        l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format('Class', 'Name', 'Firing Mode', 'Fire Rate', 'Caliber')
-        print(l, file=sample)
-
-        for row in rows:
-            l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format(row[0], row[1], row[2], row[4], row[5])
-            print(l, file=sample)
-        sample.close()
+        sample = open("output/2.out", "w")
     except Error as e:
-        print('--------------------------------------------------------')
-        print('')
-        print('')
         print(e)
-        print('')
-        print('')
-        print('--------------------------------------------------------')
-        print('')
-        print('')
     return sample
 
 def selectWeaponRows(_conn):
@@ -657,31 +642,29 @@ def main():
             # conn = openConnection(database)
             conn = sqlite3.connect(database)
 
-            selectWeapons(conn)
+            try:
+                sql = """select *
+                        from Weapons"""
 
-            # try:
-            #     sql = """select *
-            #             from Weapons"""
-
-            #     cur = conn.cursor()
-            #     cur.execute(sql)
-            #     rows = cur.fetchall()
+                cur = conn.cursor()
+                cur.execute(sql)
+                rows = cur.fetchall()
                 # sample = open("output/weapons.txt", "w")
                 # l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format('Class', 'Name', 'Firing Mode', 'Fire Rate', 'Caliber')
                 # print(l, file=sample)
                 # l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format(row[0], row[1], row[2], row[4], row[5])
                 # print(l, file=sample)
                 # sample.close()
-            # except Error as e:
-            #     print('--------------------------------------------------------')
-            #     print('')
-            #     print('')
-            #     print(e)
-            #     print('')
-            #     print('')
-            #     print('--------------------------------------------------------')
-            #     print('')
-            #     print('')
+            except Error as e:
+                print('--------------------------------------------------------')
+                print('')
+                print('')
+                print(e)
+                print('')
+                print('')
+                print('--------------------------------------------------------')
+                print('')
+                print('')
 
             print('--------------------------------------------------------')
             print('')

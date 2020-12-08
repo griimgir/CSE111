@@ -2,8 +2,6 @@ import sqlite3
 from sqlite3 import Error
 import PySimpleGUI as gui
 import mysql.connector
-import random
-import string
 
 def openConnection(_dbFile):
     print("Open database: ", _dbFile)
@@ -27,32 +25,17 @@ def closeConnection(_conn, _dbFile):
         print(e)
     print("++++++++++++++++++++++++++++++++++")
 
-def selectWeapons(_conn):
+def selectWeapon(_conn):
     try:
         sql = """select *
-                from Weapons"""
+                from Classes"""
         
         cur = _conn.cursor()
         cur.execute(sql)
         rows = cur.fetchall()
-        sample = open("output/weapons.txt", "w")
-        l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format('Class', 'Name', 'Firing Mode', 'Fire Rate', 'Caliber')
-        print(l, file=sample)
-
-        for row in rows:
-            l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format(row[0], row[1], row[2], row[4], row[5])
-            print(l, file=sample)
-        sample.close()
+        sample = open("output/2.out", "w")
     except Error as e:
-        print('--------------------------------------------------------')
-        print('')
-        print('')
         print(e)
-        print('')
-        print('')
-        print('--------------------------------------------------------')
-        print('')
-        print('')
     return sample
 
 def selectWeaponRows(_conn):
@@ -68,25 +51,9 @@ def selectWeaponRows(_conn):
         print(e)
     return rows
 
-def word():
-    return ''.join(random.choice(string.ascii_lowercase) for i in range(10))
-def number(max_val=1000):
-    return random.randint(0, max_val)
-
-def make_table(num_rows, num_cols):
-    data = [[j for j in range(num_cols)] for i in range(num_rows)]
-    data[0] = [word() for __ in range(num_cols)]
-    for i in range(1, num_rows):
-        data[i] = [word(), *[number() for i in range(num_cols - 1)]]
-    return data
-
 
 def main():
     gui.theme('DarkAmber')
-
-    test = ['Roberta', 'Kylie', 'Jenny', 'Helen',
-         'Andrea', 'Meredith', 'Deborah', 'Pauline',
-         'Belinda', 'Wendy']
 
     frame_layout = [
         [gui.Button('Ammunition'), gui.Button('Armor Vest'), gui.Button('Backpacks'), gui.Button('Buffs')],
@@ -95,49 +62,15 @@ def main():
             [gui.Button('SubClass Weapons'), gui.Button('SubClass Wearables'), gui.Button('Vital Parts'), gui.Button('Weapons')]
     ]
 
-    data = make_table(num_rows=15, num_cols=6)
-    headings = [str(data[0][x])+'     ..' for x in range(len(data[0]))]
-
-    frame_layout2 = [
-        [gui.Table(values=data[1:][:], headings=headings, max_col_width=25,
-                    # background_color='light blue',
-                    auto_size_columns=True,
-                    display_row_numbers=True,
-                    justification='right',
-                    num_rows=20,
-                    alternating_row_color='lightyellow',
-                    key='-TABLE-',
-                    row_height=35,
-                    tooltip='This is a table')],
-          [gui.Button('Read')],
-    ]
-
-    frame_layout3 = [
-        [gui.Input(size=(20, 1), enable_events=True, key='-INPUT-') ,gui.Listbox(test, size=(20, 4), enable_events=True, key='-LIST-')]
-    ]
-
     layout = [  
-        [gui.Text('Escape From Tarkov Battle Buddy')], [gui.Output(size=(81, 20)), gui.Frame('Tables', frame_layout2, title_color='#ffb84d')], [gui.Frame('Interface', frame_layout, title_color='#ffb84d'), gui.Frame('Search', frame_layout3, title_color='#ffb84d')]
+        [gui.Text('Escape From Tarkov Battle Buddy')], [gui.Output(size=(100, 50))], [gui.Frame('Interface', frame_layout, title_color='#ffb84d')]
     ]
 
     # Create the Window
-    window = gui.Window('EFT info', layout, default_element_size=(80, 20), resizable=True)
+    window = gui.Window('EFT info', layout, default_element_size=(100, 50), resizable=True)
 
     while True:
         event, value = window.read()
-
-        if value['-INPUT-'] != '':                          # if a keystroke entered in search field
-            search = value['-INPUT-']
-            new_values = [x for x in test if search in x]   # do the filtering
-            window['-LIST-'].update(new_values)             # display in the listbox
-
-        else:
-            # display original unfiltered list
-            window['-LIST-'].update(test)
-            # if a list item is chosen
-        if event == '-LIST-' and len(value['-LIST-']):
-            gui.popup('Selected ', value['-LIST-'])
-
         if event == 'Ammunition':
             print('Printing Ammunition')
             database = r"database/eft.sqlite"
@@ -657,31 +590,23 @@ def main():
             # conn = openConnection(database)
             conn = sqlite3.connect(database)
 
-            selectWeapons(conn)
+            try:
+                sql = """select *
+                        from Weapons"""
 
-            # try:
-            #     sql = """select *
-            #             from Weapons"""
-
-            #     cur = conn.cursor()
-            #     cur.execute(sql)
-            #     rows = cur.fetchall()
-                # sample = open("output/weapons.txt", "w")
-                # l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format('Class', 'Name', 'Firing Mode', 'Fire Rate', 'Caliber')
-                # print(l, file=sample)
-                # l = '{:<10} {:>16} {:>23} {:>29} {:>35}'.format(row[0], row[1], row[2], row[4], row[5])
-                # print(l, file=sample)
-                # sample.close()
-            # except Error as e:
-            #     print('--------------------------------------------------------')
-            #     print('')
-            #     print('')
-            #     print(e)
-            #     print('')
-            #     print('')
-            #     print('--------------------------------------------------------')
-            #     print('')
-            #     print('')
+                cur = conn.cursor()
+                cur.execute(sql)
+                rows = cur.fetchall()
+            except Error as e:
+                print('--------------------------------------------------------')
+                print('')
+                print('')
+                print(e)
+                print('')
+                print('')
+                print('--------------------------------------------------------')
+                print('')
+                print('')
 
             print('--------------------------------------------------------')
             print('')
@@ -708,12 +633,6 @@ def main():
         
         if event == gui.WIN_CLOSED: # if user closes window or clicks cancel
             break
-        
-        if event == 'Double':
-            for i in range(len(data)):
-                data.append(data[i])
-            window['-TABLE-'].update(values=data)
-        
     window.close()
 main()
 
