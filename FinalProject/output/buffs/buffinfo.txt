@@ -1,0 +1,14 @@
+Buff Info 
+Endurance +20, Strength +20, Stress Resstance +20 for 180 seconds
+Removes: Contusion. Metabolism +20, Immunity +20 for 90 seconds. Health Regeneration +6.5, Energy recovery +0.5/s for 60 seconds
+Stamina +30, Stamina recovery rate +2 for 240 seconds
+Removes: Pain, Contusion, Toxication. Adds: On Painkillers for 240 seconds. Metabolism +20, Health +20, Vitality +20, Health regeneration +1 for 300 seconds
+Removes: Light Bleeding, Heavy Bleeding. Vitality +20, Prevents Bleeding for 180 seconds
+Removes: Pain, Contusion. Adds: On Painkillers for 60 seconds. Endurance +10, Strength +10, Recoil Control +10 for 60 seconds. Health regeneration +4 for 15 seconds.
+Damage taken -10%, Stamina recovery rate +0.5, Endurance +20, Strength +10 for 900 seconds
+Health +5, Prevents Bleeding
+Attention +30, Perception +30, Strength +10, Stamina recovery rate +1 for 240 seconds
+Removes: Pain, Contusion. Adds: On Painkillers for 120 seconds. Endurance +10, Strength +20, Maximum Stamina +30 for 120 seconds
+Damage taken  -10%, Stress Resistance +30, Health +30, Vitality +30 for 60 seconds
+Endurance +10, Strength +10, Stress Resitance +20, Charisma +20, Stamina Recovery Rate +0.5 for 1800 seconds
+Increases weight limit for 900 seconds

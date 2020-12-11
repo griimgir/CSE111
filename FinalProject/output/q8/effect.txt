@@ -1,0 +1,3 @@
+Effect    
+Removes: Light Bleeding. Adds: Fresh Wound
+Removes: Light Bleeding. Adds: Fresh Wound

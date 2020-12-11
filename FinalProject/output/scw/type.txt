@@ -1,0 +1,10 @@
+Type      
+Assualt Rifles
+Assualt Carbines
+Light machine guns
+Submachine guns
+Shotguns  
+Designated marksman rifles
+Sniper rifles
+Grenade launchers
+Secondary weapons

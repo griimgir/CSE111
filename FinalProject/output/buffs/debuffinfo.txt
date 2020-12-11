@@ -1,0 +1,14 @@
+Debuff Info
+Energy recovery -0.25/s, Hydration recovery -0.3/s for 200 seconds
+Energy recovery -3/s for 20 seconds for 20 seconds. Health -5, Endurance -5 for 60 seconds.
+Causes hands tremor, Causes tunnel effect for 40 seconds
+Causes hands tremor, Causes tunnel effect for 30 seconds
+Causes hand tremor, Hydration recovery -1.4/s for 40 seconds. Metabolism -5 for 180 seconds
+Energy recovery -0.8/s, Hydration recovery -1/s for 30 seconds. Stress Resistance -10 for 60 seconds.
+Energy recovery -0.1/s, Hydration recovery -0.1/s for 900 seconds
+Hydration recovery -0.3/s for 120 seconds
+Causes hand tremor for 45 seconds. Energy recovery -0.25/s for 120 seconds
+Energy recovery -0.45/s, Hydration recovery -0.45/s for 60 seconds
+Endurance -10, Stamina recovery rate -0.8 for 60 seconds
+Adds: Pain, Light Bleeding. Memory -20, Intellect -20, Attention -20, Hydration recovery -0.05/s, Energy recovery -0.05/s, Damage taken +20%, Causes tunnel effect for 1800 seconds
+Health Regeneration -0.1, Damage taken +9% for 900 seconds

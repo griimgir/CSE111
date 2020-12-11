@@ -1,0 +1,328 @@
+Name      
+10.6" barrel for 416A5 and compatible 5.56x45
+10.5" 9x19 barrel for MPX
+6.5" 9x19 barrel for MPX
+406mm barrel for MDR and compatible 5.56x45
+22" barrel for a SVDS 7.62x54
+4.5" 9x19 barrel for MPX
+14" 9x19 barrel for MPX
+406mm Molot barrel for AR-15 and compatible 5.56x45
+20" barrel for a Remington M700 7.62x51 NATO
+26" barrel for a Remington M700 7.62x51 NATO
+Sawn off 200mm Mosin barrel
+Sawn off 220mm Mosin barrel
+Regular 514mm Mosin carbine barrel
+15" barrel for RPK-16 and compatible 5.45x39
+22" barrel for RPK-16 and compatible 5.45x39
+11" barrel for 416A5 and compatible 5.56x45
+14.5" barrel for 416A5 and compatible 5.56x45
+16.5" barrel for 416A5 and compatible 5.56x45
+20" barrel for 416A5 and compatible 5.56x45
+11" barrel for SA-58 7.62x51
+16" barrel for SA-58 7.62x51
+21" barrel for SA-58 7.62x51
+22" barrel for a M1A 7.62x51 NATO
+Regular 730mm Mosin barrel
+16" barrel for a M1A 7.62x51 NATO
+18" barrel for a AR-10 and compatible 7.62x51 NATO
+510mm barrel for MP-133 12ga
+500mm .308 barrel for DVL-10
+116mm 7.62x25 TT barrel
+116mm 7.62x25 TT gilded barrel
+Homespun 121mm 7.62x25 TT barrel with threading
+Threaded barrel for P226 9x19
+260mm barrel for AR-15 and compatible 5.56x45
+370mm barrel for AR-15 and compatible 5.56x45
+165 mm 9x19 barrel for MPX-SD
+203 mm 9x19 barrel for MPX
+510mm barrel for MP-133 12ga shotgun with rib
+540mm barrel for MP-133 12ga shotgun
+540mm barrel for MR-133 12ga shotgun with rib
+610mm barrel for MP-133 12ga shotgun
+610mm barrel for MP-133 12ga shotgun with rib
+660mm barrel for MR-133 12ga shotgun
+660mm barrel for MP-133 12ga shotgun with rib
+710mm barrel for MP-133 12ga shotgun
+710mm barrel for MR-133 12ga shotgun with rib
+750mm barrel for MP-133 12ga shotgun
+750mm barrel for MP-133 12ga shotgun with rib
+610 mm barrel for MP-153 12ga shotgun
+660 mm barrel for MP-153 12ga shotgun
+750 mm barrel for MP-153 12ga shotgun
+112mm barrel for P226 9x19
+660mm .308 barrel for DVL-10 M2
+22" barrel for a AR-10 and compatible 7.62x51 NATO
+710 mm barrel for MP-153 12ga shotgun
+Threaded barrel for Glock 9x19 manufactured by Lone Wolf.
+660mm vent rib barrel for M870 12ga
+508mm barrel for M870 12ga
+Basic barrel for Glock 17 9x19
+Cut off 325mm barrel for M870 12ga
+355mm barrel for M870 12ga
+508mm barrel for M870 12ga with a fixed sight
+Threaded barrel for Glock 9x19 manufactured by Double Diamond
+Barrel with compensator for Glock 17 9x19
+Threaded barrel for Glock 9x19 manufactured by Salient Arms
+Barrel with compensator for Glock 18C 9x19
+Threaded barrel for M9A3 9x19
+10.5" barrel for P90 5.7x28
+16" barrel for P90 5.7x28
+26" stainless steel barrel for a Remington M700 7.62x51 NATO
+20" stainless steel barrel for a Remington M700 7.62x51 NATO
+Barrel for Five-seveN 5.7x28
+Threaded barrel for Five-seveN 5.7x28
+18" barrel for AR-15 and compatible 5.56x45
+20" barrel for AR-15 and compatible 5.56x45
+660mm .308 barrel for T-5000
+20" barrel for SR-25 and compatible 7.62x51
+16" barrel for SR-25 and compatible 7.62x51
+23" barrel for a VPO-215 .366TKM
+16 inch .308 barrel for MDR and compatible
+Standart barrel for M1911A1 .45 ACP
+10.6" barrel for PPSH-41 7.62x25
+20" barrel for M590 12ga
+510mm barrel for KS-23 23x75mm
+700mm barrel for KS-23 23x75mm
+18" barrel for RFB 7.62x51
+National match barrel for M1911 .45 ACP
+Threaded barrel for M1911A1 .45 ACP
+VPO-101 Gas tube
+SVDS Gas tube
+HK 416A5 Regular Low Profile Gas Block
+AK-74 Gas tube
+AKM (6P1 Sb.1-2) gas tube
+Molot AKM type gas tube
+Kiba Arms VDM CS gas tube
+UltiMAK M1-B gas tube for AK
+Handguard with a gas block combo by TROY Industries for AK
+PP-19-01 gas tube
+AKS-74U Gas tube
+MK12 Low Profile Gas Block
+Colt M4 Front sight
+Windham Weaponry Rail Gas Block
+JP Enterprises Gas System-6
+JP Enterprises Gas System-5b
+VS-24 Handguard with a VS-33c gas block combo for AK
+KAC Low Profile Gas Block
+Lancer OEM 14 inch M-LOK foregrip for MPX
+Troy Industries 13" M-LOK foregrip for 416A5
+Strike Industries CRUX 15" M-LOK foregrip for 416A5
+Desert Tech foregrip for MDR
+HK MRS 14" keymod foregrip for 416A5
+Zenit B-10 AK Handguard
+SAI 10" QD Rail foregrip for AR15
+Midwest 14 inch M-LOK foregrip for MPX
+Midwest 10.5 inch M-LOK foregrip for MPX
+Midwest 4.5 inch M-LOK foregrip for MPX
+Stngr Vypr 10" M-LOK foregrip for AR15
+Daniel Defence RIS II 12.25 foregrip for AR-15-compatible systems
+Magpul MOE SL carbine length M-LOK foregrip for AR15
+Daniel Defence FDE RIS II FSP 9.5 foregrip for AR-15-compatible systems
+Polymer SVDS handguard
+SAI 14.5" QD Rail foregrip for AR15
+Midwest 6.5 inch M-LOK foregrip for MPX
+Midwest 9" M-LOK foregrip for 416A5
+Magpul Zhukov-U HAND GUARD for AK
+Magpul MOE SL mid length M-LOK foregrip for AR15
+Midwest 13.5" M-LOK foregrip for 416A5
+Izhmash RPK-16 regular handguard
+ADAR 2-15 wooden stock for AR-15 and compatibles
+VLTOR CMRD Keymod handguard for AK
+HK quadrail handguard for 416-compatible systems
+HK quadrail handguard with a flip-up sight for 416-compatible systems
+HK extended quadrail handguard for 416-compatible systems
+DS Arms Quad Rail Full Length foregrip for SA-58
+Vltor CASV FAS foregrip for FAL
+Vltor CASV FAL foregrip for FAL
+Original Austrian foregrip for a FAL
+DSA Belgian style foregrip for a FAL
+Aim sport Universal M-LOK foregrip for FAL
+Aim sport Universal keymod foregrip for FAL
+DS Arms quad rail foregrip for SA-58
+Handguard MK 10 for use with AR-15 and compatible
+Strike industries TRAX 1 foregrip
+Strike industries TRAX 2
+Colt M4 Length handguard for AR-15 and compatibles
+XRSU47SU Tactical Handguard for AKS-74U
+MP5 TL-99 Aluminum handguard
+MP5 Wide Tropical Polymer handguard
+Wooden AK-74 handguard (6P20 Sb.6)
+Magpul MOE AKM HAND GUARD for AK
+LOBAEV Arms DVL-10 M2 handguard
+Wooden AKM / VPO-209 handguard
+Wooden AK-74 handguard (6P1 Sb.6-1)
+Wooden VPO-136 handguard
+Izhmekh MP-153 Polymer stock
+Krebs Custom UFM Keymod System handguard for AKM
+MP5SD Polymer handguard
+Izhmekh MP-133 Beechwood forestock
+B-11 AKS-74U Handguard
+Handguard SIG MPX Gen. 1 for MPX
+Remington Arms handguard for a R11 RSASS
+Handguard War Sport LVOA-C blk. for use with AR-15 and compatible
+Handguard War Sport LVOA-S blk. for use with AR-15 and compatible
+Daniel Defence RIS II 9.5 foregrip for AR-15-compatible systems
+SOK-12 aluminum handguard MTU002 Long Top
+Polymer AK-74 foregrip (6P20 Sb.9)
+SOK-12 polymer handguard Sb.7-1
+SOK-12 aluminum handguard MTU002 Short Top
+CAA RS47 foregrip for AK-compatible systems
+B-10M foregrip and rail mount B-19
+Wooden AKS-74U Handguard (6P26 Sb.6)
+Knight's Armament KAC RIS handguard for AR-15 and compatibles
+Custom plastic MP-133 forestock with mounts
+Fab Defence PR870 forestock
+Magpul MOE M870 forestock
+Speedfeed short M870 forestock
+Polymer AK-100 series foregrip
+Polymer ASh-12 foregrip
+A*B Arms MOD X Gen.3 keymod handguard for M700
+5.45 Design "Aggressor" handguard for AK
+Strike Industries Viper carbine length M-LOK foregrip for AR-15
+Noveske SWS N6 10.5 inch foregrip for AR-10-compatible systems
+Noveske SWS N6 Split handguard for AR-10-compatible systems
+CAA HX-5 MP5 handguard
+URX 3.1 10.75" handguard for AR15
+URX 3 8" handguard for AR15
+Alfa Arms Goliaf AKS-74U Handguard
+PTR Tri-Rail MP5 handguard
+TDI AKM-L handguard for AK
+Wooden CAF WASR 10-63 handguard
+MP5k Polymer handguard
+Lone Star Ion Lite handguard for AR-15 and compatible
+URX-4 handguard for AR-10 and compatible
+Orsis handguard for T-5000
+SAG MK1 Freefloat Chassis for SVD
+CAA XRS DRG for SVD
+Izhmash modern handguard for SVD
+Geissele SMR Mk.16 9.5 inch M-LOK handguard for AR-15
+Geissele SMR Mk.16 13.5 inch M-LOK handguard for AR-15
+Speedfeed short M590A1 forestock
+Magpul MOE M590 forestock
+B-30 foregrip and rail mount B-31С
+TOZ KS-23M forestock
+Kel-Tec RFB regular handguard
+Lancer LCH-7 12.5 inch M-LOK handguard for AR-10
+SOK-12 aluminum handguard Bravo-18
+X47 Tactical Handguard for AK and compatible
+US Palm pistol grip for AK
+HK Grip V.2 pistol grip for AR-15 based systems
+Izhmash SVDS pistol grip
+Desert Tech pistol grip for MDR
+Razor Arms TT rubber grips
+Hogue like TT rubber grips
+Wooden Sig Sauer Elite pistol grip for P226
+Emperor scorpion Sig Sauer pistol grip for P226
+Hogue Chain link pistol grip for P226
+Axelson Tacical MK.25 pistol grip for P226
+PM-Laser TT-206 side grips with LAM
+Fab Defence AGR-870 pistol grip for Remington-870
+Izhmash AK-12 regular pistol grip
+Tacfire pistol grip for Mosin rifle
+HK "Battle Grip" pistol grip for AR-15 based systems
+HK Battle Grip with Beavertail pistol grip for AR-15 based systems
+Fab AG FAL pistol grip for SA-58
+Regular "DS Arms" pistol grip for SA-58
+TAPCO SAW-Style black pistol grip for SA-58
+Rubber with finger grooves pistol grip for P226
+Magpul MOE pistol grip for AK
+M14ALCS(MOD. 0) pistol grip for M14
+PP-19-01 Izhmash pistol grip
+TOZ 002 pistol grip for TOZ-106
+Polymer Izhmekh pistol grip for MP-443
+Sig Sauer pistol grip for P226
+TSNIITOCHMASH bakelite PB side grips
+Fancy TT side grips
+Standard TT side grips
+Izhmash AK bakelite pistol grip (6P4 Sb.8V)
+Izhmash AK polymer pistol grip (6P1 Sb.8)
+Izhmash AKM bakelite pistol grip
+Wooden Izhmash AKM pistol grip for AK
+Izhmash AK-74 Textolite pistol grip (6P4 Sb.9)
+Molot AK bakelite pistol grip
+TAPCO SAW-Style pistol grip for AK
+Zenit RK-3 AK pistol grip
+APS bakelite side-pieces
+Colt A2 AR-15 pistol grip
+DI ECS FDE pistol grip for AR-15 based systems
+Hera Arms CQR pistol grip-stock
+Hogue OverMolded Rubber Grip
+MIAD Pistol grip for AR-15 based systems
+Magpul MOE AR-15 pistol grip
+Naroh Arms GRAL-S Pistol grip for AR-15-compatible weapons
+Stark AR Rifle Grip for AR-15-compatible weapons
+Pistol grip SIG MPX
+ZMZ Polymer pistol grip for PP-91
+AS VAL Pistol grip
+Pachmayr tactical rubber grip
+Skeletonized AR-15 pistol grip
+AS VAL Pistol grip-buffer tube
+TAPCO SAW-Style pistol grip for SKS INTRAFUSE Kit
+Polymer pistol grip for M9A3
+Hera Arms HG-15 pistol grip for AR-15 based systems
+Magpul Pistol Grip for Pro 700 Kit
+SI Enhanced pistol grip for AK
+Fab Defence AG-58 pistol grip for VZ-58
+HK Ergo PSG-1 style pistol grip for AR-15 based systems
+Orsis T-5000 Pistol Grip
+Standart polymerpistol grip for M1911A1
+Pachmayr "American legend grip 423 for M1911A1
+Polymer pistol grip for KS-23M
+Standart polymerpistol grip for M45A1
+Aeroknox scorpius pistol grip for AK
+Molot VPO-101 dust cover
+Izhmash SVDS dust cover
+Upper receiver ADAR 2-15 5.56x45 for 2-15 assault rifle
+Noveske Gen.3 5.56x45 Upper receiver for AR systems
+P226 Sig Legion full size pistol slide
+P226 Sig Emperor scorpion pistol slide
+P226 Sig Stainless elite pistol slide
+P226 Axelson tactical Mk.25 pistol slide
+Izhmash regual dust cover for RPK-16
+Upper receiver HK 416A5 5.56x45 for 416A5
+Regular dust cover for FAL
+DS Arms Extreme Duty dust cover for SA58
+Glock 18C 9x19 slide
+Izhmash АK-74M dust cover (6P34 0-1)
+Glock 9x19 Moto Cut slide
+Izhmash AK-74 dust cover (6P1 0-1)
+Izhmash AKM dust cover (6P1 0-1)
+Molot AKM type dust cover
+AKS-74U Dust cover (6P26 Sb.7)
+Izhmash AKS-74UB Dust cover
+Izhmash Vityaz receiver cover
+Izhmash SOK-12 Sb.0-2 dust cover
+AS VAL Dust cover
+VSS Vintorez dust cover
+Zenit B-33 dust cover for AK-74
+Upper receiver Colt M4A1 5.56x45 for M4A1 assault rifle
+Vltor MUR-1S 5.56x45 Upper receiver for AR systems
+HK MP5SD Upper receiver
+HK MP5 Upper receiver
+Upper receiver of the first generation SIG MPX
+SIG Sauer P226R 9x19 pistol slide
+Izhmash Vityaz-SN receiver cover
+Glock Alpha Wolf Custom slide
+Polymer80 PS9 Glock slide
+Zev Tech Hex Gen3 slide
+Glock 9x19 slide
+Glock Zev Tech Hex Spartan slide
+Glock 9x19 Viper Cut slide
+Glock Alpha Wolf slide
+M9A3 9x19 pistol slide
+FN EFFEN 90 Upper receiver for P90
+FN Upper receiver for P90
+FN Upper receiver for PS90
+AKademia Bastion dust cover for AK
+Fab Defence PDC dust cover for AK-74
+TWS Dog leg rail dust cover for AK
+HK MP5 Kurz Upper receiver
+Five-seveN MK2 pistol slide
+Lightweight upper 5.56x45 for TX15 rifle
+Upper receiver KAC 7.62x51 for SR-25 rifle
+Upper receiver B&T 9x19 for MP9-N SMG
+Upper receiver B&T 9x19 for MP9 SMG
+Custom SVDS dust cover
+M1911A1 .45 ACP slide
+PPSH-41 dust cover
+M45A1 .45 ACP slide

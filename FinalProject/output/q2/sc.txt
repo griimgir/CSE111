@@ -1,0 +1,30 @@
+Subclass  
+Buff      
+Health    
+Ammuntion 
+Assault scopes
+Barrels   
+Charging handles
+Compact reflex sights
+Gas Block 
+Handguards
+Iron sights
+Magazines 
+Mounts    
+Pistol grips
+Receivers & slides
+Reflex sights
+Scopes    
+Special scopes
+Stocks & chassis
+Assualt Carbines
+Assualt Rifles
+Designated marksman rifles
+Grenade launchers
+Light machine guns
+Secondary weapons
+Shotguns  
+Sniper rifles
+Submachine guns
+Armor Vest
+Backpacks 

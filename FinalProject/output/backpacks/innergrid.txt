@@ -1,0 +1,22 @@
+Inner Grid
+6x8       
+6x7       
+(1x) 5x4 grid, (2x) 5x2 grid
+5x7       
+5x7       
+(1x) 5x5, (2x) 1x2, (1x) 3x2
+5x7       
+(1x) 4x4, (4x) 2x2
+5x6       
+5x6       
+5x6       
+4x5       
+4x5       
+4x5       
+4x4       
+4x4       
+4x3       
+3x4       
+3x3       
+4x2       
+3x2       

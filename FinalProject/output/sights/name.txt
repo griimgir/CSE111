@@ -1,0 +1,125 @@
+Name      
+ELCAN SpecterDR 1x/4x Scope
+Leupold Mark 4 HAMR 4x24mm DeltaPoint hybrid assault scope
+Primary Arms Compact prism scope 2.5x
+Sig BRAVO4 4X30 Scope
+Trijicon ACOG 3.5x35 scope
+Trijicon ACOG TA01NSN 4x32 scope
+Valday PS-320 1x/6x Scope
+Monstrum Compact prism scope 2x32
+Aimpoint COMP M4 reflex sight
+Cobra EKP-8-02 reflex sight
+Cobra EKP-8-18 reflex sight
+Eotech 553 holographic sight
+Eotech EXPS3 holographic sight
+Eotech HHS-1 sight
+Eotech XPS3-0 holographic sight
+Eotech XPS3-2 holographic sight
+Holosun HS401G5 reflex sight
+OKP-7 reflex sight
+OKP-7 reflex sight (Dovetail)
+VOMZ Pilad P1X42 "WEAVER" reflex sight
+Valday 1P87 holographic sight
+Vortex Razor AMG UH-1 holographic sight
+Walther MRS reflex sight
+FN Ring sight reflex sight
+Trijicon SRS-02 reflex sight
+Belomo PK-06 reflex sight
+Aimpoint Micro T-1 reflex sight
+Burris FastFire 3 Reflex Sight
+Leupold DeltaPoint Reflex Sight
+Trijicon RMR
+Sig Sauer Romeo 4 reflex sight
+PU 3.5x riflescope
+Nightforce ATACR 7-35x56 riflescope
+Leupold Mark 4 LR 6.5-20x50 riflescope
+Optical scope March Tactical 3-24x42 FFP
+Hensoldt FF 4-16x56 scope
+Zenit-Belomo PSO 1 4x24 scope
+Zenit-Belomo PSO 1M2 4x24 scope
+Zenit-Belomo PSO 1M2-1 4x24 scope
+EOtech Vudu 1-6 riflescope
+Burris FullField TAC 30 1-4x24 riflescope
+NPZ USP-1 4x scope
+KMZ 1P59 3-10x riflescope
+KMZ 1P69 3-10x riflescope
+VOMZ Pilad 4x32 riflescope
+NcSTAR ADO P4 Sniper 3-9x42 riflescope
+Vulcan MG night scope 3.5x
+Trijicon REAP-IR thermal riflescope
+NSPU-M night Scope
+FLIR RS-32 2.25-9x 35mm 60Hz thermal riflescope
+VPO-101 Standard Rearsight
+SVDS frontsight
+SVDS Rearsight
+Izhmash Rearsight base for RPK-16
+Izhmash Rearsight for RPK-16
+Mosin carbine Rearsight
+Trijicon ACOG backup rear sight
+Meprolight "Tru Dot Night Sight" Frontsight for P226
+Meprolight Tru Dot Night Sight rear sight for P226
+KAC Folding sight Rear
+KAC Folding sight Frontsight
+HK 416A5 Flip Up Rearsight
+MP7 Flip Up Frontsight
+MP7 Flip Up Rearsight
+Magpul MBUS Gen.2 Frontsight
+Magpul MBUS Gen.2 Rearsight
+DS Arms Holand Type Rearsight for SA-58
+SA National Match .062 blade Frontsight M1A
+Rearsight AR-15 Carry Handle
+Mosin frontsight
+Mosin Rearsight
+AK-105 Standard Rearsight (6P44 Sb.1-30)
+AK-74M Standard Rearsight (6P20 Sb.2)
+M14 Enlarged Military Aperture Rearsight
+APB Rearsight
+APS Rearsight
+APS Frontsight
+SA XS Post .125 blade Frontsight M1A
+SIG Flip Up Frontsight
+UTG Low Profile A2 Frontsight AR-15
+Sig Sauer Standard Frontsight
+SIG Flip Up Rearsight
+Colt A2 Rearsight AR-15
+HK MP5 Drum Rearsight
+Sig Sauer P226 Standard Rearsight
+Izhmash SOK-12 rear sight
+SKS Standard Rearsight
+Izhmash SV-98 Rearsight
+AS VAL Standard rear sight
+VSS Vintorez Standard Rearsight
+Dead Ringer Snake Eye Glock front sight
+Glock Front Sight
+Truglo TFX Glock front sight
+Glock ZEV Tech Front sight
+Dead Ringer Snake Eye Glock rear sight
+Glock Rear Sight
+Truglo TFX Glock rear sight
+Glock ZEV Tech Rear sight
+AK-74 Standard Rearsight (6P1 Sb.2)
+AKM Standard Rearsight (6P1 Sb.2-1)
+AKMB system rear sight
+AKMP system front sight device
+AKMP system rear sight device
+AKM / VPO-209 Standard Rearsight
+Tactica Tula TT01 Rearsight Weaver Adapter
+Sight Mount Sig 220-239 rear sight bearing
+Izhmash rear sight for PP-19-01
+SOK-12 CSS SIGHT RAIL MOUNT rear sight
+M9A3 Standard Frontsight
+Beretta M9A3 Standard Rearsight
+Sight Mount M9 rear sight bearing
+Rearsight ASh-12 Carry Handle
+ASh-12 Folding sight Frontsight
+Five-seveN Standard Rear-sight
+Five-seveN MK2 Standard Frontsight
+KAC Folding micro sight Rear
+KAC Folding micro sight Frontsight
+B&T MP9 Standard Rear-sight
+M1911A1 Front Sight
+M1911A1 Rear Sight
+Ghost ring kit M590 Frontsight
+Ghost ring Rear sight for M590
+Novak Lomount Rear Sight
+Novak Lomount Front Sight

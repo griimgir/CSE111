@@ -1,0 +1,203 @@
+Name
+5.25mm Buckshot
+8.5mm Buckshot "Magnum"
+6.5mm Buckshot "Express"
+7mm Buckshot
+Flechette 
+RIP Slug  
+Superformance HP Slug
+Grizzly 40 Slug
+HP Copper Sabot Premier
+Led Slug  
+Dual Sabot Slug
+Slug "Poleva-3"
+FTX Custom Lite Slug
+Slug "Poleva-6u"
+Shell With .50 BMG (Tracer)
+AP 20 Slug
+5.6mm Buckshot
+6.2mm Buckshot
+7.5mm Buckshot
+7.3mm Buckshot
+Devastator Slug
+Slug "Poleva-3"
+Star Slug 
+Slug "Poleva-6u"
+"Star" Flashbang Slug
+Shrapnel 25
+Shrapnel 10
+"Barricade" Slug
+SP8       
+SP7       
+PSV       
+P gzh     
+PSO gzh   
+PS gs PPO 
+PRS gs    
+PPE gzh   
+PPT gzh   
+PST gzh   
+RG028 gzh 
+BZT gzh   
+PMM       
+PBM       
+LRNPC     
+LRN       
+FMJ43     
+akbs      
+P Gl      
+T Gzh (Tracer)
+Pst gzh   
+RIP       
+Quakemaker
+PSO gzh   
+Luger CCI 
+Green Tracer
+PST gzh   
+AP 6.3    
+7n31      
+RIP       
+Hydroshok 
+Lasermatch (Tracer)
+ACP       
+ACP AP    
+sp12      
+sp11      
+sp10      
+sp13      
+r37f      
+ss198lf   
+r37x      
+ss197sr   
+l191 (Tracer)
+sb193     
+ss190     
+Action SX 
+Subsonic SX
+FMJ SX    
+AP SX     
+sp5       
+sp6       
+SPP       
+BP        
+Geksa     
+FMJ       
+EKO       
+AP        
+SP        
+HP        
+PRS       
+US        
+FMJ       
+T (Tracer)
+PS        
+PP        
+BP        
+BT (Tracer)
+BS        
+7n39      
+Warmage   
+55_HP     
+MK_255_Mod_0
+M856 (Tracer)
+FMJ       
+M855      
+M856A1 (Tracer)
+M855A1    
+M995      
+HP        
+US        
+T45M (Tracer)
+PS        
+BP        
+Ultra Nosler
+BPZ FMJ   
+TPZ SP    
+M80       
+M62 (Tracer)
+M61       
+M993      
+T-46M (Tracer)
+LPS_Gzh   
+7N1       
+7BT1 (Tracer)
+SNB       
+7n37      
+ps12a     
+ps12      
+ps12b     
+M381      
+M386      
+M406      
+M443      
+M441      
+M576      
+5.25mm Buckshot
+8.5mm Buckshot "Magnum"
+6.5mm Buckshot "Express"
+7mm Buckshot
+sp12      
+sp11      
+sp10      
+sp13      
+r37f      
+ss198lf   
+r37x      
+ss197sr   
+l191 (Tracer)
+sb193     
+ss190     
+Action SX 
+Subsonic SX
+FMJ SX    
+AP SX     
+sp5       
+sp6       
+SPP       
+BP        
+Geksa     
+FMJ       
+EKO       
+AP        
+SP        
+HP        
+PRS       
+US        
+FMJ       
+T (Tracer)
+PS        
+PP        
+BP        
+BT (Tracer)
+BS        
+7n39      
+Warmage   
+55_HP     
+MK_255_Mod_0
+M856 (Tracer)
+FMJ       
+M855      
+M856A1 (Tracer)
+M855A1    
+M995      
+HP        
+US        
+T45M (Tracer)
+PS        
+BP        
+Ultra Nosler
+BPZ FMJ   
+TPZ SP    
+M80       
+M62 (Tracer)
+M61       
+M993      
+T-46M (Tracer)
+LPS_Gzh   
+7N1       
+7BT1 (Tracer)
+SNB       
+7n37      
+ps12a     
+ps12      
+ps12b     

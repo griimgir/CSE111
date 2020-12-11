@@ -13,7 +13,7 @@ w2 = LabelFrame(bb, text="Interface")
 w1.pack(fill="both", expand="yes", padx=28, pady=10)
 w2.pack(fill="both", expand="yes", padx=28, pady=10)
 
-bb.title("Escape From Tarkov battle buddy")
+bb.title("Escape From Tarkov Battle Buddy Installer")
 bb.geometry("800x700")
 bb.resizable(True, True)
 bb.mainloop()
