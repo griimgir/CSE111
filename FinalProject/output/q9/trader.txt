@@ -1,0 +1,9 @@
+Trader    
+Fence     
+Jaeger    
+Mechanic  
+Peacekeeper
+Prapor    
+Ragman    
+Skier     
+Therapist 

@@ -1,0 +1,5 @@
+Weapon    
+AS VAL    
+OP-SKS    
+SKS       
+Vepr Hunter/VPO-101

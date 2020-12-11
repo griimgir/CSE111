@@ -1,0 +1,3 @@
+Effect    
+Removes: Light Bleeding, Heavy Bleeding. Adds: Fresh Wound, Restores HP
+Removes: Heavy Bleeding

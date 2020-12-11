@@ -1,0 +1,20 @@
+Effects   
+Removes: Pain. Adds: On Painkillers for 100 seconds. Hydration -7.
+Removes: Pain, Toxication. Adds: On Painkillers for 150 seconds
+Removes: Pain, Contusion. Adds: On Painkillers for 300 seconds. Energy -5. Hydration -10.
+Removes: Pain, Contusion. Adds: On Painkillers for 280 seconds. Hydration -8.
+Removes: Light Bleeding. Adds: Fresh Wound
+Removes: Light Bleeding. Adds: Fresh Wound
+Removes: Radiation, Exposure. Adds: Restores HP
+Removes: Light Bleeding, Toxication, Radiation, Exposure. Adds: Fresh Wound, Restores HP
+Removes: Light Bleeding, Heavy Bleeding. Adds: Fresh Wound, Restores HP
+Removes: Light Bleeding, Toxication, Radiation, Exposure. Adds: Fresh Wound, Restores HP
+Removes: Light Bleeding, Heavy Bleeding, Fracture, Contusion, Pain. Adds: Fresh Wound, Restores HP
+Removes: Fracture
+Removes: Fracture
+Removes: Pain. Adds: On painkillers for 300 seconds. Energy -2. Hydration -2.
+Removes: Contusion, Pain, Toxication for 400 seconds, Radiation exposure for 400 seconds. Adds: On Painkillers for 400 seconds, Increases hydration recovery for 5 seconds, Increases energy recovery for 5 seconds. Energy -10.
+Removes: Destroyed body part (not thorax or head)
+Removes: Fracture (not thorax or head)
+Removes: Heavy Bleeding
+Removes: Heavy Bleeding

@@ -1,0 +1,29 @@
+Assault Rifles
+ADAR 2-15 
+AK-101    
+AK-102    
+AK-103    
+AK-104    
+AK-105    
+AK-74     
+AK-74M    
+AK-74N    
+AKM       
+AKMN      
+AKMS      
+AKMSN     
+AKS-74    
+AKS-74N   
+AKS-74U   
+AKS-74UB  
+AKS-74UN  
+ASh-12    
+DT MDR 5.56x45
+DT MDR .308
+HK 416A5  
+Kel-Tec RFB 7.62x51
+M4A1      
+SA-58     
+TX-15 DML 
+Vepr AKM/VPO-209
+Vepr KM/VPO-136
